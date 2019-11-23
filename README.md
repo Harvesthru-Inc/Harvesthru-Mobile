@@ -1,2 +1,0 @@
-# Harvesthru-Mobile
-Mobile App
