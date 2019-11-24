@@ -1,4 +1,4 @@
-import {createAppContainer} from 'react-navigation-stack';
+import {createAppContainer} from 'react-navigation';
 import React from 'react';
 import Authentication from './AuthenticationNavigator';
 

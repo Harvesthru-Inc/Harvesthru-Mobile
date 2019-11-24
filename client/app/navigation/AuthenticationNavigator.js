@@ -1,14 +1,24 @@
 import {createStackNavigator} from 'react-navigation-stack';
 import Login from '../screens/Login';
+import Signup from '../screens/Signup';
+import {Images} from '../assets/images';
 
-export default createStackNavigator(
+const Left = ({onPress}) => (
+  <TouchableHighlight onPress={onPress}>
+    <Image source={Images.backArrow} />
+  </TouchableHighlight>
+);
+
+export default Authentication = createStackNavigator(
   {
     Login,
+    Signup,
   },
   {
-    cardStyle: {backgroundColor: 'white', opacity: 1},
     headerMode: 'none',
-    initialRouteName: 'Main',
-    transitionConfig,
+    initialRouteName: 'Login',
   },
+  {
+    headerMode: 'none'
+  }
 );

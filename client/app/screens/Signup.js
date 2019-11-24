@@ -1,13 +1,5 @@
 import React from 'react';
-import {
-  Text,
-  SafeAreaView,
-  Image,
-  StyleSheet,
-  View,
-  TouchableOpacity,
-} from 'react-native';
-import {Images} from '../assets/images';
+import {Text, SafeAreaView, StyleSheet} from 'react-native';
 import NextButton from '../components/NextButton';
 import MyTextInput from '../components/MyTextInput';
 
@@ -17,8 +9,7 @@ export default class Login extends React.Component {
   render() {
     return (
       <SafeAreaView style={styles.loginContainer}>
-        <Image source={Images.wheatIcon}></Image>
-        <Text style={styles.loginTitle}>Harvesthru</Text>
+        <Text style={styles.signUpTitle}>Sign Up</Text>
         <MyTextInput
           contentWidth={TEXT_INPUT_WIDTH}
           text="Email"
@@ -31,22 +22,9 @@ export default class Login extends React.Component {
         />
         <Text style={styles.forgotPass}>Forgot Password?</Text>
         <NextButton text={'LOGIN'} extraStyles={styles.btnStyles} />
-        <View style={styles.loginWith}>
-          <View style={styles.loginWithHr}></View>
-          <Text style={styles.loginWithText}>Or Log In With</Text>
-          <View style={styles.loginWithHr}></View>
-        </View>
-        <View style={styles.authButtons}>
-          <Image source={Images.fbIcon} />
-          <Image source={Images.googleIcon} />
-        </View>
-        <View style={styles.redirectSignup}>
-          <Text style={styles.signUpText}>Don't have an account? </Text>
-          <TouchableOpacity
-            onPress={() => this.props.navigation.navigate('Signup')}>
-            <Text style={styles.signUpTextBold}>Sign Up!</Text>
-          </TouchableOpacity>
-        </View>
+
+        <Text style={styles.signUpText}>Don't have an account? </Text>
+        <Text style={styles.signUpTextBold}>Sign Up!</Text>
       </SafeAreaView>
     );
   }
@@ -60,13 +38,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
 
-  loginTitle: {
+  signUpTitle: {
     fontFamily: 'Quicksand-Bold',
     fontStyle: 'normal',
     fontSize: 36,
     lineHeight: 45,
     color: '#9ACD00',
     marginBottom: 10,
+    textAlign: 'left',
   },
 
   loginWith: {
