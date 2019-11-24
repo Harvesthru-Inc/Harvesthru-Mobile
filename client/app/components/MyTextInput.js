@@ -6,8 +6,8 @@ const MyTextInput = ({text, contentWidth, type}) => {
   return (
     <View style={[styles.authTextInput, {width: contentWidth}]}>
       <TextInput
-        secureTextEntry={true}
-        style={[styles.passInput, type === 'password' && {width: contentWidth - 14}]}
+        secureTextEntry={type === 'password'}
+        style={[styles.passInput, {width: type === 'password' ? contentWidth - 14 : contentWidth}]}
         placeholder={text}
       />
       {type === 'password' && <Image source={Images.hidePasswordIcon}></Image>}

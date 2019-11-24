@@ -22,14 +22,17 @@ export default class Login extends React.Component {
         <MyTextInput
           contentWidth={TEXT_INPUT_WIDTH}
           text="Email"
-          type="Email"
+          type="email"
         />
         <MyTextInput
           contentWidth={TEXT_INPUT_WIDTH}
           text="Password"
           type="password"
         />
-        <Text style={styles.forgotPass}>Forgot Password?</Text>
+        <TouchableOpacity
+          onPress={() => this.props.navigation.navigate('ForgotPass')}>
+          <Text style={styles.forgotPass}>Forgot Password?</Text>
+        </TouchableOpacity>
         <NextButton text={'LOGIN'} extraStyles={styles.btnStyles} />
         <View style={styles.loginWith}>
           <View style={styles.loginWithHr}></View>
@@ -115,6 +118,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-evenly',
     width: TEXT_INPUT_WIDTH,
+    marginBottom: 40,
   },
 
   redirectSignup: {
@@ -122,7 +126,8 @@ const styles = StyleSheet.create({
     width: TEXT_INPUT_WIDTH,
     alignItems: 'center',
     justifyContent: 'center',
-    marginTop: 30,
+    position: 'absolute',
+    bottom: 20,
   },
 
   signUpText: {
