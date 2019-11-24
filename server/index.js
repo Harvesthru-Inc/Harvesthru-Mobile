@@ -8,10 +8,10 @@ app.use(bodyParser.json());
 const mongoose = require('mongoose');
 
 // Mongo Atlas custom URL to mongoose connection
-const URL = process.env.URL;
+const DATABASE_URL = process.env.DATABASE_URL;
 
 mongoose
-  .connect(URL, {
+  .connect(DATABASE_URL, {
     dbName: 'authentication',
     useNewUrlParser: true,
     useUnifiedTopology: true,
