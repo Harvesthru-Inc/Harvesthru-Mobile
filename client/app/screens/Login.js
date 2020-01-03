@@ -118,7 +118,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-evenly',
     width: TEXT_INPUT_WIDTH,
-    marginBottom: 40,
   },
 
   redirectSignup: {
@@ -126,8 +125,7 @@ const styles = StyleSheet.create({
     width: TEXT_INPUT_WIDTH,
     alignItems: 'center',
     justifyContent: 'center',
-    position: 'absolute',
-    bottom: 20,
+    marginTop: 20,
   },
 
   signUpText: {
