@@ -59,7 +59,7 @@
 		059D4398982575667B7C633E /* Pods-none.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-none.debug.xcconfig"; path = "Target Support Files/Pods-none/Pods-none.debug.xcconfig"; sourceTree = "<group>"; };
 		0F546D05E0B2F705C59441F0 /* Pods-none-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-none-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-none-tvOSTests/Pods-none-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		119B4A4E8E1B4CC6ADD877C5 /* Quicksand-BoldItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Quicksand-BoldItalic.otf"; path = "../assets/fonts/Quicksand-BoldItalic.otf"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* Harvesthry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Harvesthry.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* Harvesthru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Harvesthru.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = none/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = none/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -195,7 +195,7 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* Harvesthry.app */,
+				13B07F961A680F5B00A75B9A /* Harvesthru.app */,
 				00E356EE1AD99517003FC87E /* HarvesthruTests.xctest */,
 				2D02E47B1E0B4A5D006451C7 /* Harvesthru-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* Harvesthru-tvOSTests.xctest */,
@@ -274,7 +274,7 @@
 			);
 			name = Harvesthru;
 			productName = none;
-			productReference = 13B07F961A680F5B00A75B9A /* Harvesthry.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* Harvesthru.app */;
 			productType = "com.apple.product-type.application";
 		};
 		2D02E47A1E0B4A5D006451C7 /* Harvesthru-tvOS */ = {
@@ -335,10 +335,12 @@
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = MC92QLL494;
 						ProvisioningStyle = Automatic;
 					};
 					2D02E48F1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = MC92QLL494;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2D02E47A1E0B4A5D006451C7;
 					};
@@ -691,7 +693,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.harvesthru;
-				PRODUCT_NAME = Harvesthry;
+				PRODUCT_NAME = Harvesthru;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -711,7 +713,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.harvesthru;
-				PRODUCT_NAME = Harvesthry;
+				PRODUCT_NAME = Harvesthru;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -727,6 +729,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = MC92QLL494;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "none-tvOS/Info.plist";
@@ -756,6 +759,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = MC92QLL494;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "none-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -782,6 +786,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = MC92QLL494;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "none-tvOSTests/Info.plist";
@@ -810,6 +815,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = MC92QLL494;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "none-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
