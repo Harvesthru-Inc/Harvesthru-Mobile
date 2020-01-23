@@ -4,4 +4,6 @@ export const Images = {
   googleIcon: require('./google-icon.png'),
   hidePasswordIcon: require('./hidepass-icon.png'),
   backArrow: require('./back-arrow.png'),
+  homeIcon: require('./home-icon.png'),
+  userProfileIcon: require('./user-icon.png')
 };

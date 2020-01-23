@@ -1,8 +1,8 @@
 import {createAppContainer} from 'react-navigation';
 import React from 'react';
-import Authentication from './AuthenticationNavigator';
+import MainStackNavigator from './MainStackNavigator';
 
-export const AppContainer = createAppContainer(Authentication);
+export const AppContainer = createAppContainer(MainStackNavigator);
 
 export default class Navigator extends React.Component {
   render() {
