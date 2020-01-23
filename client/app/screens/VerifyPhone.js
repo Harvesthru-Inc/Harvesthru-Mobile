@@ -5,32 +5,30 @@ import {
   StyleSheet,
   View,
   TouchableOpacity,
+  TextInput,
 } from 'react-native';
-import NextButton from '../components/NextButton';
-import MyTextInput from '../components/MyTextInput';
 
 const TEXT_INPUT_WIDTH = 290;
 
-export default class Phone extends React.Component {
+export default class VerifyPhone extends React.Component {
   render() {
     return (
       <SafeAreaView style={styles.container}>
-        <Text style={styles.genericTitle}>Phone Number</Text>
+        <Text style={styles.genericTitle}>Verification</Text>
         <Text style={styles.helpText}>
-          Enter your phone number and we will send you 4-digit code
+          Please enter your 4-digit code
         </Text>
-        <MyTextInput
-          contentWidth={TEXT_INPUT_WIDTH}
-          text="Phone Number"
-          type="phone"
-        />
-        <NextButton
-          text={'NEXT'}
-          extraStyles={styles.btnStyles}
-          onPress={() => this.props.navigation.navigate('VerifyPhone')}
-        />
+        <View style={styles.codeInputRow}>
+            <TextInput style={styles.codeInputBox} />
+            <TextInput style={styles.codeInputBox} />
+            <TextInput style={styles.codeInputBox} />
+            <TextInput style={styles.codeInputBox} />
+        </View>
         <Text style={[styles.helpText, {textAlign: 'center', marginTop: 30}]}>
-          By entering your phone number, you agree to our Terms and Conditions
+          Didn't receive your code?
+        </Text>
+        <Text style={[styles.helpText, {textAlign: 'center', marginTop: 5, color: 'red'}]}>
+          Resend Now
         </Text>
         <View style={styles.redirectLogin}>
           <Text style={styles.loginText}>Already have an account? </Text>
@@ -61,7 +59,6 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     textAlign: 'left',
     width: TEXT_INPUT_WIDTH,
-    letterSpacing: 0.1,
   },
 
   helpText: {
@@ -102,5 +99,23 @@ const styles = StyleSheet.create({
     fontSize: 14,
     lineHeight: 17,
     textAlign: 'center',
+  },
+
+  codeInputRow: {
+      flexDirection: 'row',
+      justifyContent: 'center',
+      alignItems: 'center',
+      marginTop: 40,
+  },
+   
+  codeInputBox: {
+    width: 59,
+    height: 68,
+    borderRadius: 10,
+    backgroundColor: '#DFDFDF',
+    marginHorizontal: 8,
+    textAlign: 'center',
+    textAlignVertical: 'center',
+    fontSize: 30,
   },
 });

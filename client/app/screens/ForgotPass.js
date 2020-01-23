@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
   },
 
   helpText: {
-    fontFamily: 'Montserrat',
+    fontFamily: 'Montserrat-Regular',
     fontStyle: 'normal',
     fontWeight: 'normal',
     fontSize: 12,

@@ -98,7 +98,7 @@ const styles = StyleSheet.create({
 
   forgotPass: {
     marginTop: 20,
-    fontFamily: 'Montserrat',
+    fontFamily: 'Montserrat-Regular',
     fontStyle: 'italic',
     fontWeight: 'normal',
     fontSize: 14,
@@ -125,7 +125,8 @@ const styles = StyleSheet.create({
     width: TEXT_INPUT_WIDTH,
     alignItems: 'center',
     justifyContent: 'center',
-    marginTop: 20,
+    position: 'absolute',
+    bottom: 15,
   },
 
   signUpText: {

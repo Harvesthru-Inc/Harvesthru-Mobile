@@ -85,7 +85,8 @@ const styles = StyleSheet.create({
     width: TEXT_INPUT_WIDTH,
     alignItems: 'center',
     justifyContent: 'center',
-    marginTop: 20,
+    position: 'absolute',
+    bottom: 15,
   },
 
   loginText: {
