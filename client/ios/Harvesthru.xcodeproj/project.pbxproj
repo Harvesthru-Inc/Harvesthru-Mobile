@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* noneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* noneTests.m */; };
-		0CD83944F6D02A19A10FBB4A /* libPods-none-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA202A478D5173DF9BE60E4 /* libPods-none-tvOS.a */; };
-		0DE857728E2C4ABA9F2407CE /* Quicksand-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A06792914A7A43EE93876410 /* Quicksand-LightItalic.otf */; };
+		00E356F31AD99517003FC87E /* HarvesthruTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* HarvesthruTests.m */; };
+		0CD83944F6D02A19A10FBB4A /* libPods-Harvesthru-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA202A478D5173DF9BE60E4 /* libPods-Harvesthru-tvOS.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -17,19 +16,13 @@
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2DCD954D1E0B4F2C00145EB5 /* noneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* noneTests.m */; };
+		2DCD954D1E0B4F2C00145EB5 /* HarvesthruTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* HarvesthruTests.m */; };
 		39C7C13D79D04C83960D9175 /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5021E68106BA4C73AF137AD7 /* Quicksand-Regular.ttf */; };
 		3A77CC195B194FABB56E2AD3 /* Quicksand-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 00B2E90FBA3F484AA07A58EB /* Quicksand-Bold.ttf */; };
-		3C7338031B584EE4AED3A7FD /* Quicksand-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BCBD91AB6B014A64B594AFEB /* Quicksand-Regular.otf */; };
-		4C5D0AEF86AB43B88E43AB01 /* Quicksand_Dash.otf in Resources */ = {isa = PBXBuildFile; fileRef = 84C0B12CEBD94A92A740E04F /* Quicksand_Dash.otf */; };
-		515B7754FF254052AA227CE7 /* Quicksand-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6D563B44F9704DBBACD6019B /* Quicksand-Italic.otf */; };
-		5FCC6A55A2105E67774436B4 /* libPods-noneTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51405D61A9D37D1C8D4B7960 /* libPods-noneTests.a */; };
-		7232D3CD2FC36C268A19C96A /* libPods-none-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94ED45AF72AE0BEF5505B062 /* libPods-none-tvOSTests.a */; };
+		5FCC6A55A2105E67774436B4 /* libPods-HarvesthruTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51405D61A9D37D1C8D4B7960 /* libPods-HarvesthruTests.a */; };
+		7232D3CD2FC36C268A19C96A /* libPods-Harvesthru-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94ED45AF72AE0BEF5505B062 /* libPods-Harvesthru-tvOSTests.a */; };
 		7311D1CC49644AF99DE2D474 /* Quicksand-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 900712A4CBC54FCAA93FC872 /* Quicksand-Light.ttf */; };
-		76537B00A12E41CA9AEF3FA8 /* Quicksand-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 119B4A4E8E1B4CC6ADD877C5 /* Quicksand-BoldItalic.otf */; };
-		AAEBE9087907D5DD468CA2B9 /* libPods-none.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FABA32AD9620B73B8C4C5C4 /* libPods-none.a */; };
-		CF100FD4D7FE485DA13705F4 /* Quicksand-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A45A55168D33482F83F7497D /* Quicksand-Bold.otf */; };
-		D46FAC842FB143F783E11BDE /* Quicksand-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 196F2BCDCF8B47C6A8B6D894 /* Quicksand-Light.otf */; };
+		AAEBE9087907D5DD468CA2B9 /* libPods-Harvesthru.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FABA32AD9620B73B8C4C5C4 /* libPods-Harvesthru.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,14 +31,14 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = none;
+			remoteInfo = Harvesthru;
 		};
 		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
-			remoteInfo = "none-tvOS";
+			remoteInfo = "Harvesthru-tvOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -54,39 +47,39 @@
 		00B2E90FBA3F484AA07A58EB /* Quicksand-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Quicksand-Bold.ttf"; path = "../assets/fonts/Quicksand-Bold.ttf"; sourceTree = "<group>"; };
 		00E356EE1AD99517003FC87E /* HarvesthruTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HarvesthruTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* noneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = noneTests.m; sourceTree = "<group>"; };
-		042B9D0B01D674414962E2FD /* Pods-noneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-noneTests.release.xcconfig"; path = "Target Support Files/Pods-noneTests/Pods-noneTests.release.xcconfig"; sourceTree = "<group>"; };
-		059D4398982575667B7C633E /* Pods-none.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-none.debug.xcconfig"; path = "Target Support Files/Pods-none/Pods-none.debug.xcconfig"; sourceTree = "<group>"; };
-		0F546D05E0B2F705C59441F0 /* Pods-none-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-none-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-none-tvOSTests/Pods-none-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* HarvesthruTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HarvesthruTests.m; sourceTree = "<group>"; };
+		042B9D0B01D674414962E2FD /* Pods-HarvesthruTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HarvesthruTests.release.xcconfig"; path = "Target Support Files/Pods-HarvesthruTests/Pods-HarvesthruTests.release.xcconfig"; sourceTree = "<group>"; };
+		059D4398982575667B7C633E /* Pods-Harvesthru.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Harvesthru.debug.xcconfig"; path = "Target Support Files/Pods-Harvesthru/Pods-Harvesthru.debug.xcconfig"; sourceTree = "<group>"; };
+		0F546D05E0B2F705C59441F0 /* Pods-Harvesthru-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Harvesthru-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-Harvesthru-tvOSTests/Pods-Harvesthru-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		119B4A4E8E1B4CC6ADD877C5 /* Quicksand-BoldItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Quicksand-BoldItalic.otf"; path = "../assets/fonts/Quicksand-BoldItalic.otf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* Harvesthru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Harvesthru.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = none/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = none/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Harvesthru/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Harvesthru/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = none/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = none/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = none/main.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Harvesthru/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Harvesthru/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Harvesthru/main.m; sourceTree = "<group>"; };
 		196F2BCDCF8B47C6A8B6D894 /* Quicksand-Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Quicksand-Light.otf"; path = "../assets/fonts/Quicksand-Light.otf"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* Harvesthru-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Harvesthru-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* Harvesthru-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Harvesthru-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		45A1FDCFA402F4552E806A00 /* Pods-none-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-none-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-none-tvOS/Pods-none-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		45A1FDCFA402F4552E806A00 /* Pods-Harvesthru-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Harvesthru-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-Harvesthru-tvOS/Pods-Harvesthru-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		5021E68106BA4C73AF137AD7 /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Quicksand-Regular.ttf"; path = "../assets/fonts/Quicksand-Regular.ttf"; sourceTree = "<group>"; };
-		51405D61A9D37D1C8D4B7960 /* libPods-noneTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-noneTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5347856CA21DAC5205534129 /* Pods-none-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-none-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-none-tvOSTests/Pods-none-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		51405D61A9D37D1C8D4B7960 /* libPods-HarvesthruTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HarvesthruTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5347856CA21DAC5205534129 /* Pods-Harvesthru-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Harvesthru-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Harvesthru-tvOSTests/Pods-Harvesthru-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6D563B44F9704DBBACD6019B /* Quicksand-Italic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Quicksand-Italic.otf"; path = "../assets/fonts/Quicksand-Italic.otf"; sourceTree = "<group>"; };
-		6FABA32AD9620B73B8C4C5C4 /* libPods-none.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-none.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FABA32AD9620B73B8C4C5C4 /* libPods-Harvesthru.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Harvesthru.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C0B12CEBD94A92A740E04F /* Quicksand_Dash.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Quicksand_Dash.otf; path = ../assets/fonts/Quicksand_Dash.otf; sourceTree = "<group>"; };
-		8AA3D66F7915D627B094D8C6 /* Pods-noneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-noneTests.debug.xcconfig"; path = "Target Support Files/Pods-noneTests/Pods-noneTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8AA3D66F7915D627B094D8C6 /* Pods-HarvesthruTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HarvesthruTests.debug.xcconfig"; path = "Target Support Files/Pods-HarvesthruTests/Pods-HarvesthruTests.debug.xcconfig"; sourceTree = "<group>"; };
 		900712A4CBC54FCAA93FC872 /* Quicksand-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Quicksand-Light.ttf"; path = "../assets/fonts/Quicksand-Light.ttf"; sourceTree = "<group>"; };
-		94ED45AF72AE0BEF5505B062 /* libPods-none-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-none-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94ED45AF72AE0BEF5505B062 /* libPods-Harvesthru-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Harvesthru-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A06792914A7A43EE93876410 /* Quicksand-LightItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Quicksand-LightItalic.otf"; path = "../assets/fonts/Quicksand-LightItalic.otf"; sourceTree = "<group>"; };
 		A45A55168D33482F83F7497D /* Quicksand-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Quicksand-Bold.otf"; path = "../assets/fonts/Quicksand-Bold.otf"; sourceTree = "<group>"; };
-		B6898A712232805989A2646F /* Pods-none.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-none.release.xcconfig"; path = "Target Support Files/Pods-none/Pods-none.release.xcconfig"; sourceTree = "<group>"; };
+		B6898A712232805989A2646F /* Pods-Harvesthru.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Harvesthru.release.xcconfig"; path = "Target Support Files/Pods-Harvesthru/Pods-Harvesthru.release.xcconfig"; sourceTree = "<group>"; };
 		BCBD91AB6B014A64B594AFEB /* Quicksand-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Quicksand-Regular.otf"; path = "../assets/fonts/Quicksand-Regular.otf"; sourceTree = "<group>"; };
-		ECECB891C4119BA48E96AAA1 /* Pods-none-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-none-tvOS.release.xcconfig"; path = "Target Support Files/Pods-none-tvOS/Pods-none-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		ECECB891C4119BA48E96AAA1 /* Pods-Harvesthru-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Harvesthru-tvOS.release.xcconfig"; path = "Target Support Files/Pods-Harvesthru-tvOS/Pods-Harvesthru-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		FFA202A478D5173DF9BE60E4 /* libPods-none-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-none-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFA202A478D5173DF9BE60E4 /* libPods-Harvesthru-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Harvesthru-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FCC6A55A2105E67774436B4 /* libPods-noneTests.a in Frameworks */,
+				5FCC6A55A2105E67774436B4 /* libPods-HarvesthruTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,7 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAEBE9087907D5DD468CA2B9 /* libPods-none.a in Frameworks */,
+				AAEBE9087907D5DD468CA2B9 /* libPods-Harvesthru.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,7 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CD83944F6D02A19A10FBB4A /* libPods-none-tvOS.a in Frameworks */,
+				0CD83944F6D02A19A10FBB4A /* libPods-Harvesthru-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,20 +111,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7232D3CD2FC36C268A19C96A /* libPods-none-tvOSTests.a in Frameworks */,
+				7232D3CD2FC36C268A19C96A /* libPods-Harvesthru-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* noneTests */ = {
+		00E356EF1AD99517003FC87E /* HarvesthruTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* noneTests.m */,
+				00E356F21AD99517003FC87E /* HarvesthruTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = noneTests;
+			path = HarvesthruTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -142,7 +135,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* none */ = {
+		13B07FAE1A68108700A75B9A /* Harvesthru */ = {
 			isa = PBXGroup;
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
@@ -153,7 +146,7 @@
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = none;
+			name = Harvesthru;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -161,10 +154,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				6FABA32AD9620B73B8C4C5C4 /* libPods-none.a */,
-				FFA202A478D5173DF9BE60E4 /* libPods-none-tvOS.a */,
-				94ED45AF72AE0BEF5505B062 /* libPods-none-tvOSTests.a */,
-				51405D61A9D37D1C8D4B7960 /* libPods-noneTests.a */,
+				6FABA32AD9620B73B8C4C5C4 /* libPods-Harvesthru.a */,
+				FFA202A478D5173DF9BE60E4 /* libPods-Harvesthru-tvOS.a */,
+				94ED45AF72AE0BEF5505B062 /* libPods-Harvesthru-tvOSTests.a */,
+				51405D61A9D37D1C8D4B7960 /* libPods-HarvesthruTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -179,9 +172,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* none */,
+				13B07FAE1A68108700A75B9A /* Harvesthru */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* noneTests */,
+				00E356EF1AD99517003FC87E /* HarvesthruTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				C89A368598554E12025E6AF9 /* Pods */,
@@ -223,14 +216,14 @@
 		C89A368598554E12025E6AF9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				059D4398982575667B7C633E /* Pods-none.debug.xcconfig */,
-				B6898A712232805989A2646F /* Pods-none.release.xcconfig */,
-				45A1FDCFA402F4552E806A00 /* Pods-none-tvOS.debug.xcconfig */,
-				ECECB891C4119BA48E96AAA1 /* Pods-none-tvOS.release.xcconfig */,
-				5347856CA21DAC5205534129 /* Pods-none-tvOSTests.debug.xcconfig */,
-				0F546D05E0B2F705C59441F0 /* Pods-none-tvOSTests.release.xcconfig */,
-				8AA3D66F7915D627B094D8C6 /* Pods-noneTests.debug.xcconfig */,
-				042B9D0B01D674414962E2FD /* Pods-noneTests.release.xcconfig */,
+				059D4398982575667B7C633E /* Pods-Harvesthru.debug.xcconfig */,
+				B6898A712232805989A2646F /* Pods-Harvesthru.release.xcconfig */,
+				45A1FDCFA402F4552E806A00 /* Pods-Harvesthru-tvOS.debug.xcconfig */,
+				ECECB891C4119BA48E96AAA1 /* Pods-Harvesthru-tvOS.release.xcconfig */,
+				5347856CA21DAC5205534129 /* Pods-Harvesthru-tvOSTests.debug.xcconfig */,
+				0F546D05E0B2F705C59441F0 /* Pods-Harvesthru-tvOSTests.release.xcconfig */,
+				8AA3D66F7915D627B094D8C6 /* Pods-HarvesthruTests.debug.xcconfig */,
+				042B9D0B01D674414962E2FD /* Pods-HarvesthruTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -253,7 +246,7 @@
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
 			name = HarvesthruTests;
-			productName = noneTests;
+			productName = HarvesthruTests;
 			productReference = 00E356EE1AD99517003FC87E /* HarvesthruTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
@@ -273,7 +266,7 @@
 			dependencies = (
 			);
 			name = Harvesthru;
-			productName = none;
+			productName = Harvesthru;
 			productReference = 13B07F961A680F5B00A75B9A /* Harvesthru.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -293,7 +286,7 @@
 			dependencies = (
 			);
 			name = "Harvesthru-tvOS";
-			productName = "none-tvOS";
+			productName = "Harvesthru-tvOS";
 			productReference = 2D02E47B1E0B4A5D006451C7 /* Harvesthru-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -312,7 +305,7 @@
 				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
 			);
 			name = "Harvesthru-tvOSTests";
-			productName = "none-tvOSTests";
+			productName = "Harvesthru-tvOSTests";
 			productReference = 2D02E4901E0B4A5D006451C7 /* Harvesthru-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
@@ -382,13 +375,6 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
-				4C5D0AEF86AB43B88E43AB01 /* Quicksand_Dash.otf in Resources */,
-				CF100FD4D7FE485DA13705F4 /* Quicksand-Bold.otf in Resources */,
-				76537B00A12E41CA9AEF3FA8 /* Quicksand-BoldItalic.otf in Resources */,
-				515B7754FF254052AA227CE7 /* Quicksand-Italic.otf in Resources */,
-				D46FAC842FB143F783E11BDE /* Quicksand-Light.otf in Resources */,
-				0DE857728E2C4ABA9F2407CE /* Quicksand-LightItalic.otf in Resources */,
-				3C7338031B584EE4AED3A7FD /* Quicksand-Regular.otf in Resources */,
 				3A77CC195B194FABB56E2AD3 /* Quicksand-Bold.ttf in Resources */,
 				7311D1CC49644AF99DE2D474 /* Quicksand-Light.ttf in Resources */,
 				39C7C13D79D04C83960D9175 /* Quicksand-Regular.ttf in Resources */,
@@ -442,7 +428,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-none-tvOS-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Harvesthru-tvOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -478,7 +464,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-none-tvOSTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Harvesthru-tvOSTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -500,7 +486,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-noneTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-HarvesthruTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -522,7 +508,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-none-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Harvesthru-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -574,7 +560,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* noneTests.m in Sources */,
+				00E356F31AD99517003FC87E /* HarvesthruTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,7 +586,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DCD954D1E0B4F2C00145EB5 /* noneTests.m in Sources */,
+				2DCD954D1E0B4F2C00145EB5 /* HarvesthruTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -626,7 +612,7 @@
 				13B07FB21A68108700A75B9A /* Base */,
 			);
 			name = LaunchScreen.xib;
-			path = none;
+			path = Harvesthru;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -634,7 +620,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8AA3D66F7915D627B094D8C6 /* Pods-noneTests.debug.xcconfig */;
+			baseConfigurationReference = 8AA3D66F7915D627B094D8C6 /* Pods-HarvesthruTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = MC92QLL494;
@@ -642,7 +628,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = noneTests/Info.plist;
+				INFOPLIST_FILE = HarvesthruTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -658,12 +644,12 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 042B9D0B01D674414962E2FD /* Pods-noneTests.release.xcconfig */;
+			baseConfigurationReference = 042B9D0B01D674414962E2FD /* Pods-HarvesthruTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				DEVELOPMENT_TEAM = MC92QLL494;
-				INFOPLIST_FILE = noneTests/Info.plist;
+				INFOPLIST_FILE = HarvesthruTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -679,13 +665,13 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 059D4398982575667B7C633E /* Pods-none.debug.xcconfig */;
+			baseConfigurationReference = 059D4398982575667B7C633E /* Pods-Harvesthru.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = MC92QLL494;
-				INFOPLIST_FILE = none/Info.plist;
+				INFOPLIST_FILE = Harvesthru/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -700,12 +686,12 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B6898A712232805989A2646F /* Pods-none.release.xcconfig */;
+			baseConfigurationReference = B6898A712232805989A2646F /* Pods-Harvesthru.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MC92QLL494;
-				INFOPLIST_FILE = none/Info.plist;
+				INFOPLIST_FILE = Harvesthru/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -720,7 +706,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 45A1FDCFA402F4552E806A00 /* Pods-none-tvOS.debug.xcconfig */;
+			baseConfigurationReference = 45A1FDCFA402F4552E806A00 /* Pods-Harvesthru-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -732,14 +718,14 @@
 				DEVELOPMENT_TEAM = MC92QLL494;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "none-tvOS/Info.plist";
+				INFOPLIST_FILE = "Harvesthru-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.none-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Harvesthru-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -749,7 +735,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ECECB891C4119BA48E96AAA1 /* Pods-none-tvOS.release.xcconfig */;
+			baseConfigurationReference = ECECB891C4119BA48E96AAA1 /* Pods-Harvesthru-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -761,14 +747,14 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = MC92QLL494;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "none-tvOS/Info.plist";
+				INFOPLIST_FILE = "Harvesthru-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.none-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Harvesthru-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -778,7 +764,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5347856CA21DAC5205534129 /* Pods-none-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = 5347856CA21DAC5205534129 /* Pods-Harvesthru-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -789,14 +775,14 @@
 				DEVELOPMENT_TEAM = MC92QLL494;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "none-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "Harvesthru-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.none-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Harvesthru-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Harvesthru-tvOS.app/Harvesthru-tvOS";
@@ -806,7 +792,7 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F546D05E0B2F705C59441F0 /* Pods-none-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = 0F546D05E0B2F705C59441F0 /* Pods-Harvesthru-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -817,14 +803,14 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = MC92QLL494;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "none-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "Harvesthru-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.none-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Harvesthru-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Harvesthru-tvOS.app/Harvesthru-tvOS";
