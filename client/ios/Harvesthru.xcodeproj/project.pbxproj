@@ -22,6 +22,8 @@
 		5FCC6A55A2105E67774436B4 /* libPods-HarvesthruTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51405D61A9D37D1C8D4B7960 /* libPods-HarvesthruTests.a */; };
 		7232D3CD2FC36C268A19C96A /* libPods-Harvesthru-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94ED45AF72AE0BEF5505B062 /* libPods-Harvesthru-tvOSTests.a */; };
 		7311D1CC49644AF99DE2D474 /* Quicksand-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 900712A4CBC54FCAA93FC872 /* Quicksand-Light.ttf */; };
+		7318F46DBE6645A69B359316 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 31B375FB810F4F609E7BF349 /* Montserrat-Bold.ttf */; };
+		7A012CD912F245B39BB30177 /* Montserrat.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF759F6615B94FDB9CC81482 /* Montserrat.ttf */; };
 		AAEBE9087907D5DD468CA2B9 /* libPods-Harvesthru.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FABA32AD9620B73B8C4C5C4 /* libPods-Harvesthru.a */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +64,7 @@
 		196F2BCDCF8B47C6A8B6D894 /* Quicksand-Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Quicksand-Light.otf"; path = "../assets/fonts/Quicksand-Light.otf"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* Harvesthru-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Harvesthru-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* Harvesthru-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Harvesthru-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		31B375FB810F4F609E7BF349 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Bold.ttf"; path = "../assets/fonts/Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		45A1FDCFA402F4552E806A00 /* Pods-Harvesthru-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Harvesthru-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-Harvesthru-tvOS/Pods-Harvesthru-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		5021E68106BA4C73AF137AD7 /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Quicksand-Regular.ttf"; path = "../assets/fonts/Quicksand-Regular.ttf"; sourceTree = "<group>"; };
 		51405D61A9D37D1C8D4B7960 /* libPods-HarvesthruTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HarvesthruTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +82,7 @@
 		ECECB891C4119BA48E96AAA1 /* Pods-Harvesthru-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Harvesthru-tvOS.release.xcconfig"; path = "Target Support Files/Pods-Harvesthru-tvOS/Pods-Harvesthru-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		EF759F6615B94FDB9CC81482 /* Montserrat.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Montserrat.ttf; path = ../assets/fonts/Montserrat.ttf; sourceTree = "<group>"; };
 		FFA202A478D5173DF9BE60E4 /* libPods-Harvesthru-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Harvesthru-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -209,6 +213,8 @@
 				00B2E90FBA3F484AA07A58EB /* Quicksand-Bold.ttf */,
 				900712A4CBC54FCAA93FC872 /* Quicksand-Light.ttf */,
 				5021E68106BA4C73AF137AD7 /* Quicksand-Regular.ttf */,
+				31B375FB810F4F609E7BF349 /* Montserrat-Bold.ttf */,
+				EF759F6615B94FDB9CC81482 /* Montserrat.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -315,7 +321,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 940;
+				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -378,6 +384,8 @@
 				3A77CC195B194FABB56E2AD3 /* Quicksand-Bold.ttf in Resources */,
 				7311D1CC49644AF99DE2D474 /* Quicksand-Light.ttf in Resources */,
 				39C7C13D79D04C83960D9175 /* Quicksand-Regular.ttf in Resources */,
+				7318F46DBE6645A69B359316 /* Montserrat-Bold.ttf in Resources */,
+				7A012CD912F245B39BB30177 /* Montserrat.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -822,6 +830,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -875,6 +884,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;

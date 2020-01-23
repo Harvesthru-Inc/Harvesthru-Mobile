@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
   },
 
   btnStyles: {
-    marginTop: 100,
+    marginTop: 80,
   },
 
   authButtons: {
@@ -85,8 +85,7 @@ const styles = StyleSheet.create({
     width: TEXT_INPUT_WIDTH,
     alignItems: 'center',
     justifyContent: 'center',
-    position: 'absolute',
-    bottom: 20,
+    marginTop: 20,
   },
 
   loginText: {

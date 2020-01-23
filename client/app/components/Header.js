@@ -25,5 +25,6 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-start',
     alignItems: 'center',
     paddingHorizontal: 30,
+    paddingTop: 20,
   },
 });
