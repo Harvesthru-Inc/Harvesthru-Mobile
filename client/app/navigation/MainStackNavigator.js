@@ -17,6 +17,6 @@ export default MainStackNavigator = createStackNavigator(
   },
   {
     headerMode: 'none',
-    initialRouteName: 'Main',
+    initialRouteName: 'Login',
   },
 );

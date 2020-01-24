@@ -1,15 +1,20 @@
 import React from 'react';
-import {View, StyleSheet, TouchableOpacity, Image} from 'react-native';
+import {View, StyleSheet, TouchableOpacity, Image, Text} from 'react-native';
 import {Images} from '../assets/images';
 
 const HEADER_HEIGHT = 80;
 
-const Header = ({goBack}) => {
+const Header = ({goBack, centerIcon}) => {
   return (
-    <View style={[styles.headerStyle, {height: HEADER_HEIGHT}]}>
-      <TouchableOpacity onPress={goBack}>
-        <Image source={Images.backArrow} />
-      </TouchableOpacity>
+    <View style={[styles.headerStyle, {height: HEADER_HEIGHT}, centerIcon && {justifyContent: 'center'}]}>
+      {goBack && (
+        <TouchableOpacity onPress={goBack}>
+          <Image source={Images.backArrow} />
+        </TouchableOpacity>
+      )}
+      {centerIcon && (
+        <Image style={styles.centerIcon} source={Images.headerIcon}></Image>
+      )}
     </View>
   );
 };
@@ -24,7 +29,11 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'flex-start',
     alignItems: 'center',
-    paddingHorizontal: 30,
+    paddingHorizontal: 20,
     paddingTop: 20,
+  },
+
+  centerIcon: {
+    marginRight: 20,
   },
 });

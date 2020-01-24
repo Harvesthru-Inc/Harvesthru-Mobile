@@ -5,5 +5,8 @@ export const Images = {
   hidePasswordIcon: require('./hidepass-icon.png'),
   backArrow: require('./back-arrow.png'),
   homeIcon: require('./home-icon.png'),
-  userProfileIcon: require('./user-icon.png')
+  userProfileIcon: require('./user-icon.png'),
+  headerIcon: require('./header-icon.png'),
+  profilePlaceholder: require('./profile-placeholder.png'),
+  fruitsBasket: require('./fruits-basket.png'),
 };

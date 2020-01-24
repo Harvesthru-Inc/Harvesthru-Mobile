@@ -33,7 +33,11 @@ export default class Login extends React.Component {
           onPress={() => this.props.navigation.navigate('ForgotPass')}>
           <Text style={styles.forgotPass}>Forgot Password?</Text>
         </TouchableOpacity>
-        <NextButton text={'LOGIN'} extraStyles={styles.btnStyles} />
+        <NextButton
+          text={'LOGIN'}
+          extraStyles={styles.btnStyles}
+          onPress={() => this.props.navigation.navigate('Main')}
+        />
         <View style={styles.loginWith}>
           <View style={styles.loginWithHr}></View>
           <Text style={styles.loginWithText}>Or Log In With</Text>

@@ -7,6 +7,8 @@ import {
   TouchableOpacity,
   TextInput,
 } from 'react-native';
+import Header from '../components/Header';
+import NextButton from '../components/NextButton';
 
 const TEXT_INPUT_WIDTH = 290;
 
@@ -14,22 +16,30 @@ export default class VerifyPhone extends React.Component {
   render() {
     return (
       <SafeAreaView style={styles.container}>
+        <Header goBack={() => this.props.navigation.goBack()} />
         <Text style={styles.genericTitle}>Verification</Text>
-        <Text style={styles.helpText}>
-          Please enter your 4-digit code
-        </Text>
+        <Text style={styles.helpText}>Please enter your 4-digit code</Text>
         <View style={styles.codeInputRow}>
-            <TextInput style={styles.codeInputBox} />
-            <TextInput style={styles.codeInputBox} />
-            <TextInput style={styles.codeInputBox} />
-            <TextInput style={styles.codeInputBox} />
+          <TextInput style={styles.codeInputBox} />
+          <TextInput style={styles.codeInputBox} />
+          <TextInput style={styles.codeInputBox} />
+          <TextInput style={styles.codeInputBox} />
         </View>
         <Text style={[styles.helpText, {textAlign: 'center', marginTop: 30}]}>
           Didn't receive your code?
         </Text>
-        <Text style={[styles.helpText, {textAlign: 'center', marginTop: 5, color: 'red'}]}>
+        <Text
+          style={[
+            styles.helpText,
+            {textAlign: 'center', marginTop: 5, color: 'red'},
+          ]}>
           Resend Now
         </Text>
+        <NextButton
+          text={'TO HOME'}
+          onPress={() => this.props.navigation.navigate('Main')}
+          extraStyles={{marginTop: 40}}
+        />
         <View style={styles.redirectLogin}>
           <Text style={styles.loginText}>Already have an account? </Text>
           <TouchableOpacity
@@ -102,12 +112,12 @@ const styles = StyleSheet.create({
   },
 
   codeInputRow: {
-      flexDirection: 'row',
-      justifyContent: 'center',
-      alignItems: 'center',
-      marginTop: 40,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: 40,
   },
-   
+
   codeInputBox: {
     width: 59,
     height: 68,
