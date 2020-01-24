@@ -59,7 +59,6 @@ buck-out/
 /ios/Pods/
 
 .env
-
 server/.env
 
 client/.env

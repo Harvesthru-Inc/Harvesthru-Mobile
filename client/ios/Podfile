@@ -1,8 +1,8 @@
 platform :ios, '9.0'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
-target 'none' do
-  # Pods for none
+target 'Harvesthru' do
+  # Pods for Harvesthru
   pod 'FBLazyVector', :path => "../node_modules/react-native/Libraries/FBLazyVector"
   pod 'FBReactNativeSpec', :path => "../node_modules/react-native/Libraries/FBReactNativeSpec"
   pod 'RCTRequired', :path => "../node_modules/react-native/Libraries/RCTRequired"
@@ -34,7 +34,7 @@ target 'none' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
-  target 'noneTests' do
+  target 'HarvesthruTests' do
     inherit! :search_paths
     # Pods for testing
   end
@@ -42,10 +42,10 @@ target 'none' do
   use_native_modules!
 end
 
-target 'none-tvOS' do
-  # Pods for none-tvOS
+target 'Harvesthru-tvOS' do
+  # Pods for Harvesthru-tvOS
 
-  target 'none-tvOSTests' do
+  target 'Harvesthru-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end
