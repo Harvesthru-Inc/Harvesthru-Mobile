@@ -1,25 +1,22 @@
-import React from 'react';
 import {Image} from 'react-native';
+
+import React, {Component} from 'react';
 
 import {Images} from '../assets/images';
 
-const TabBarButton = ({focused, tintColor}) => {
+const TabBarButton = ({navigation, focused, tintColor}) => {
   const {routeName} = navigation.state;
-  if (routeName === 'Home') {
-    return (
-      <Image
-        source={Images.homeIcon}
-        style={{width: 20, height: 20}}
-      />
-    );
-  } else {
-    return (
-      <Image
-        source={Images.userProfileIcon}
-        style={{width: 20, height: 20}}
-      />
-    );
-  }
+  return (
+    <Image
+      source={chooseRouteName(routeName)}
+      style={{width: 20, height: 20, tintColor}}
+    />
+  );
 };
+
+const chooseRouteName = (routeName) => {
+  if (routeName == 'Home') return Images.homeIcon;
+  else if (routeName == 'Profile') return Images.userProfileIcon
+}
 
 export default TabBarButton;
