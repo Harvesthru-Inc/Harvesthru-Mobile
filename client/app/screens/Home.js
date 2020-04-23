@@ -1,14 +1,18 @@
 import React from 'react';
-import {View, Dimensions, Animated} from 'react-native';
+import {View, Dimensions, Animated, StyleSheet, PanResponder} from 'react-native';
 import MapView from 'react-native-maps';
-import HomeStyles from 'app/assets/stylesheets/HomeStyles';
 import {getStatusBarHeight} from 'react-native-status-bar-height';
+
+const MIN_SCROLL_HEIGHT = 40;
+const MAX_SCROLL_HEIGHT =
+  Dimensions.get('window').height - getStatusBarHeight();
+const DEFAULT_SCROLL_HEIGHT = 220;
 
 export default class Home extends React.Component {
   constructor(props) {
-    this.previousHeight = Animated.Value(MIN_SCROLL_HEIGHT);
-    this.currentHeight = Animated.Value(MIN_SCROLL_HEIGHT);
-    this.heightOffset = Animated.Value(0);
+    this.previousHeight = new Animated.Value(MIN_SCROLL_HEIGHT);
+    this.currentHeight = new Animated.Value(MIN_SCROLL_HEIGHT);
+    this.heightOffset = new Animated.Value(0);
 
     this.panResponder = PanResponder.create({
       onStartShouldSetPanResponder: () => true,
@@ -49,12 +53,16 @@ export default class Home extends React.Component {
   render() {
     return (
       <View>
-        <MapView style={HomeStyles.container} />
+        <MapView style={styles.container} />
       </View>
     );
   }
 }
 
-const MIN_SCROLL_HEIGHT = 40;
-const MAX_SCROLL_HEIGHT =
-  Dimensions.get('window').height - getStatusBarHeight();
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+});
