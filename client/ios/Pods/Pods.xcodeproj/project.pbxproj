@@ -9407,6 +9407,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 57A7BAB74612756D3E448BC2862C8596 /* react-native-google-maps.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = No;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -9882,6 +9883,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7E37ECD635E9B1CBAA8F8272216489D5 /* react-native-google-maps.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = No;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";

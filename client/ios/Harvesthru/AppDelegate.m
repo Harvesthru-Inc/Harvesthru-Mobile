@@ -16,7 +16,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-  [GMSServices provideAPIKey:@"AIzaSyA8CWYTOx3Oi7Kxpsk56EsB30YFPbmdNps"];  // API Key for Google Maps API
+  [GMSServices provideAPIKey:@"AIzaSyAJxDnSeODBRLh5vqTYcgy51KmyBBe3LZg"];  // API Key for Google Maps API
   RCTBridge *bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:launchOptions];
   RCTRootView *rootView = [[RCTRootView alloc] initWithBridge:bridge
                                                    moduleName:@"Harvesthru"
