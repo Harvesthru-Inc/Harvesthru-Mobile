@@ -1,12 +1,18 @@
 import React, {Component} from 'react';
 import {createBottomTabNavigator} from 'react-navigation-tabs';
-import Home from '../../screens/Home';
-import UserProfile from '../../screens/UserProfile';
+import Home from '../../screens/BottomTab/Home';
+import Social from '../../screens/BottomTab/Social';
+import Sell from '../../screens/BottomTab/Sell';
+import Orders from '../../screens/BottomTab/orders';
+import UserProfile from '../../screens/BottomTab/UserProfile';
 import TabBarButton from '../../components/Buttons/TabBarButton';
 
 const HomeBottomTab = createBottomTabNavigator(
   {
     Home,
+    Social,
+    Sell,
+    Orders,
     Profile: UserProfile,
   },
   {

@@ -17,10 +17,13 @@ const DEFAULT_SCROLL_HEIGHT = 220;
 export default class Home extends React.Component {
   constructor(props) {
     super(props);
+
+    // Animated values to handle scroll menu height
     this.previousHeight = new Animated.Value(MIN_SCROLL_HEIGHT);
     this.currentHeight = new Animated.Value(MIN_SCROLL_HEIGHT);
     this.heightOffset = new Animated.Value(0);
 
+    // Set pan responder to listen for screen interactions
     this.panResponder = PanResponder.create({
       onStartShouldSetPanResponder: () => true,
       onPanResponderGrant: event => {

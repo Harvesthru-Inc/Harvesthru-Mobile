@@ -6,39 +6,32 @@ import {
   View,
   TouchableOpacity,
 } from 'react-native';
-import NextButton from '../components/Buttons/NextButton';
-import MyTextInput from '../components/TextInputs/MyTextInput';
-import Header from '../components/Headers/Header';
+import NextButton from '../../components/Buttons/NextButton';
+import MyTextInput from '../../components/TextInputs/MyTextInput';
 
 const TEXT_INPUT_WIDTH = 290;
 
-export default class Signup extends React.Component {
+export default class Phone extends React.Component {
   render() {
     return (
-      <SafeAreaView style={styles.signUpContainer}>
-        <Header goBack={() => this.props.navigation.goBack()} />
-        <Text style={styles.signUpTitle}>Sign Up</Text>
-        <MyTextInput contentWidth={TEXT_INPUT_WIDTH} text="Name" type="name" />
+      <SafeAreaView style={styles.container}>
+        <Text style={styles.genericTitle}>Phone Number</Text>
+        <Text style={styles.helpText}>
+          Enter your phone number and we will send you 4-digit code
+        </Text>
         <MyTextInput
           contentWidth={TEXT_INPUT_WIDTH}
-          text="Email"
-          type="email"
-        />
-        <MyTextInput
-          contentWidth={TEXT_INPUT_WIDTH}
-          text="Enter Your Password"
-          type="password"
-        />
-        <MyTextInput
-          contentWidth={TEXT_INPUT_WIDTH}
-          text="Confirm Your Password"
-          type="confirm"
+          text="Phone Number"
+          type="phone"
         />
         <NextButton
-          text={'CREATE'}
-          onPress={() => this.props.navigation.navigate('Phone')}
+          text={'NEXT'}
           extraStyles={styles.btnStyles}
+          onPress={() => this.props.navigation.navigate('VerifyPhone')}
         />
+        <Text style={[styles.helpText, {textAlign: 'center', marginTop: 30}]}>
+          By entering your phone number, you agree to our Terms and Conditions
+        </Text>
         <View style={styles.redirectLogin}>
           <Text style={styles.loginText}>Already have an account? </Text>
           <TouchableOpacity
@@ -52,32 +45,38 @@ export default class Signup extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  signUpContainer: {
+  container: {
     paddingTop: 70,
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
   },
 
-  signUpTitle: {
+  genericTitle: {
     fontFamily: 'Quicksand-Bold',
     fontStyle: 'normal',
-    fontSize: 36,
+    fontSize: 30,
     lineHeight: 45,
     color: '#9ACD00',
     marginBottom: 10,
     textAlign: 'left',
     width: TEXT_INPUT_WIDTH,
+    letterSpacing: 0.1,
+  },
+
+  helpText: {
+    fontFamily: 'Montserrat-Regular',
+    fontStyle: 'normal',
+    fontWeight: 'normal',
+    fontSize: 12,
+    lineHeight: 15,
+    width: TEXT_INPUT_WIDTH,
+    textAlign: 'left',
+    color: '#A5A5A5',
   },
 
   btnStyles: {
-    marginTop: 80,
-  },
-
-  authButtons: {
-    flexDirection: 'row',
-    justifyContent: 'space-evenly',
-    width: TEXT_INPUT_WIDTH,
+    marginTop: 90,
   },
 
   redirectLogin: {
