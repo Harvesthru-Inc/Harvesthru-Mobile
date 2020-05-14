@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, StyleSheet, TouchableOpacity, Image, Text} from 'react-native';
-import {Images} from '../../assets/images';
+import {Images} from '~/assets/images';
 
 const HEADER_HEIGHT = 80;
 

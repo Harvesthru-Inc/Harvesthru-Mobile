@@ -9,9 +9,9 @@ import {
   TextInput,
   FlatList,
 } from 'react-native';
-import Header from '../components/Headers/Header';
-import {Images} from '../assets/images';
-import ListItem from '../components/ListItems/ListItem';
+import Header from '~/components/Headers/Header';
+import {Images} from '~/assets/images';
+import ListItem from '~/components/ListItems/ListItem';
 
 // Temp data
 const data = [
