@@ -1,5 +1,11 @@
 import React from 'react';
-import {View, Dimensions, Animated, StyleSheet, PanResponder} from 'react-native';
+import {
+  View,
+  Dimensions,
+  Animated,
+  StyleSheet,
+  PanResponder,
+} from 'react-native';
 import MapView from 'react-native-maps';
 import {getStatusBarHeight} from 'react-native-status-bar-height';
 
@@ -10,6 +16,7 @@ const DEFAULT_SCROLL_HEIGHT = 220;
 
 export default class Home extends React.Component {
   constructor(props) {
+    super(props);
     this.previousHeight = new Animated.Value(MIN_SCROLL_HEIGHT);
     this.currentHeight = new Animated.Value(MIN_SCROLL_HEIGHT);
     this.heightOffset = new Animated.Value(0);
@@ -51,11 +58,7 @@ export default class Home extends React.Component {
   }
 
   render() {
-    return (
-      <View>
-        <MapView style={styles.container} />
-      </View>
-    );
+    return <MapView style={styles.container} />;
   }
 }
 

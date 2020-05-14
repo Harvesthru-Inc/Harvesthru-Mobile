@@ -7,8 +7,8 @@ import {
   TouchableOpacity,
   TextInput,
 } from 'react-native';
-import Header from '../components/Header';
-import NextButton from '../components/NextButton';
+import Header from '../components/Headers/Header';
+import NextButton from '../components/Buttons/NextButton';
 
 const TEXT_INPUT_WIDTH = 290;
 

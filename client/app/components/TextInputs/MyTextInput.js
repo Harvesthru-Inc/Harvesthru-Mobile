@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, Image, StyleSheet, TextInput} from 'react-native';
-import {Images} from '../assets/images';
+import {Images} from '../../assets/images';
 
 const MyTextInput = ({text, contentWidth, type}) => {
   return (

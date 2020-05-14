@@ -1,6 +1,6 @@
 import {createAppContainer} from 'react-navigation';
 import React from 'react';
-import MainStackNavigator from './MainStackNavigator';
+import MainStackNavigator from './MainNavigator/MainStackNavigator';
 
 export const AppContainer = createAppContainer(MainStackNavigator);
 

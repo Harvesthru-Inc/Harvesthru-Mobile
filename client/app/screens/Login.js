@@ -8,9 +8,10 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import {Images} from '../assets/images';
-import NextButton from '../components/NextButton';
-import MyTextInput from '../components/MyTextInput';
+import NextButton from '../components/Buttons/NextButton';
+import MyTextInput from '../components/TextInputs/MyTextInput';
 
+// Set width for login text input
 const TEXT_INPUT_WIDTH = 290;
 
 export default class Login extends React.Component {
