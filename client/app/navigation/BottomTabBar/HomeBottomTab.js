@@ -7,6 +7,8 @@ import Orders from '~/screens/BottomTab/Orders';
 import UserProfile from '~/screens/BottomTab/UserProfile';
 import TabBarButton from '~/components/Buttons/TabBarButton';
 
+export const BOTTOM_TAB_HEIGHT = 60;
+
 const HomeBottomTab = createBottomTabNavigator(
   {
     Home,
@@ -31,7 +33,7 @@ const HomeBottomTab = createBottomTabNavigator(
       activeTintColor: '#9ACD00',
       inactiveTintColor: '#979797',
       style: {
-        height: 60,
+        height: BOTTOM_TAB_HEIGHT,
         justifyContent: 'center',
         paddingVertical: 10,
       },
