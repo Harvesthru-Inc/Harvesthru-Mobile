@@ -5,6 +5,7 @@ export const Images = {
   hidePasswordIcon: require('./ComponentIcons/hidepass-icon.png'),
   profilePlaceholder: require('./ComponentIcons/profile-placeholder.png'),
   fruitsBasket: require('./ComponentIcons/fruits-basket.png'),
+  homeSearchIcon: require('./ComponentIcons/search-icon.png'),
 
   // Header Icons
   wheatIcon: require('./HeaderIcons/wheat-icon.png'),

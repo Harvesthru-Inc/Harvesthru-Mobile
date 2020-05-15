@@ -1,7 +1,7 @@
 import React from 'react';
 import {Text, SafeAreaView, StyleSheet, View, TouchableOpacity} from 'react-native';
 import NextButton from '~/components/Buttons/NextButton';
-import MyTextInput from '~/components/TextInputs/MyTextInput';
+import AuthTextInput from '~/components/TextInputs/AuthTextInput';
 import Header from '~/components/Headers/Header';
 
 const TEXT_INPUT_WIDTH = 290;
@@ -13,7 +13,7 @@ export default class ForgotPass extends React.Component {
         <Header goBack={() => this.props.navigation.goBack()} />
         <Text style={styles.genericTitle}>Forgot Password?</Text>
         <Text style={styles.helpText}>Enter your email or phone number and we’ll send you a link to reset your password!</Text>
-        <MyTextInput contentWidth={TEXT_INPUT_WIDTH} text='Email or Phone Number' type="name" />
+        <AuthTextInput contentWidth={TEXT_INPUT_WIDTH} text='Email or Phone Number' type="name" />
         <NextButton text={'SEND'} extraStyles={styles.btnStyles} />
       </SafeAreaView>
     );

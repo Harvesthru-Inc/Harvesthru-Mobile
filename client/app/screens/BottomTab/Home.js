@@ -5,21 +5,28 @@ import {
   Animated,
   StyleSheet,
   PanResponder,
+  Text,
+  Keyboard,
 } from 'react-native';
 import MapView from 'react-native-maps';
 import {getStatusBarHeight} from 'react-native-status-bar-height';
-import {BOTTOM_TAB_HEIGHT} from '~/navigation/BottomTabBar/HomeBottomTab';
+import HomeTextInput from '~/components/TextInputs/HomeTextInput';
 
 // Define scroll levels
 const MAX_SCROLL_HEIGHT =
-  Dimensions.get('window').height - getStatusBarHeight() - 1.5 * BOTTOM_TAB_HEIGHT;
-const DEFAULT_SCROLL_HEIGHT = MAX_SCROLL_HEIGHT / 3;
-const MIN_SCROLL_HEIGHT = 40;
+  Dimensions.get('window').height - getStatusBarHeight();
+const DEFAULT_SCROLL_HEIGHT = 220;
+const MIN_SCROLL_HEIGHT = 55;
 const SMOOTH_FACTOR = 1.0;
 
 export default class Home extends React.Component {
   constructor(props) {
     super(props);
+
+    // Set state
+    this.state = {
+      homeInputText: '',
+    };
 
     // Animated values to handle scroll menu height
     this.previousHeight = new Animated.Value(DEFAULT_SCROLL_HEIGHT);
@@ -32,6 +39,9 @@ export default class Home extends React.Component {
       onPanResponderGrant: event => {
         // Set height offset to 0
         this.heightOffset.setValue(0);
+
+        // Dismiss keyboard
+        Keyboard.dismiss();
       },
       onPanResponderMove: (event, gesture) => {
         // Calculate height offset
@@ -106,13 +116,32 @@ export default class Home extends React.Component {
     // Get handles for pan handler
     const handles = this.panResponder.panHandlers;
 
+    // Home text input parameters
+    const placeholder = 'Explore fresh produce near you';
+    const value = this.state.homeInputText;
+    const setText = text => this.setState({homeInputText: text});
+    const onPress = () => {
+      console.log('gi');
+      this._bounceToHeight(MAX_SCROLL_HEIGHT);
+    };
+    const onSubmit = () => console.log(this.state.homeInputText);
+
     return (
       <View style={styles.container}>
         <MapView style={styles.map} />
         <Animated.View
           {...handles}
-          style={[styles.scrollMenu, {height: this.currentHeight}]}
-        />
+          style={[styles.scrollMenu, {height: this.currentHeight}]}>
+          <View style={styles.pullTab} />
+          <Text style={styles.title}>Hi, Emily!</Text>
+          <HomeTextInput
+            placeholder={placeholder}
+            value={value}
+            setText={setText}
+            onPress={onPress}
+            onSubmit={onSubmit}
+          />
+        </Animated.View>
       </View>
     );
   }
@@ -142,5 +171,23 @@ const styles = StyleSheet.create({
     shadowColor: '#E4E4E4',
     shadowRadius: 3,
     shadowOpacity: 0.5,
+  },
+
+  pullTab: {
+    height: 4,
+    width: 40,
+    backgroundColor: '#D4D4D4',
+    borderRadius: 20,
+    alignSelf: 'center',
+    marginTop: 8,
+  },
+
+  title: {
+    fontFamily: 'Nunito',
+    fontWeight: 'bold',
+    fontSize: 18,
+    width: '100%',
+    paddingLeft: 19,
+    paddingTop: 9,
   },
 });

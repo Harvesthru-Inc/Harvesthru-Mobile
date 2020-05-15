@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import {Images} from '~/assets/images';
 import NextButton from '~/components/Buttons/NextButton';
-import MyTextInput from '~/components/TextInputs/MyTextInput';
+import AuthTextInput from '~/components/TextInputs/AuthTextInput';
 
 // Set width for login text input
 const TEXT_INPUT_WIDTH = 290;
@@ -20,12 +20,12 @@ export default class Login extends React.Component {
       <SafeAreaView style={styles.loginContainer}>
         <Image source={Images.wheatIcon}></Image>
         <Text style={styles.loginTitle}>Harvesthru</Text>
-        <MyTextInput
+        <AuthTextInput
           contentWidth={TEXT_INPUT_WIDTH}
           text="Email"
           type="email"
         />
-        <MyTextInput
+        <AuthTextInput
           contentWidth={TEXT_INPUT_WIDTH}
           text="Password"
           type="password"

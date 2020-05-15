@@ -7,7 +7,7 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import NextButton from '~/components/Buttons/NextButton';
-import MyTextInput from '~/components/TextInputs/MyTextInput';
+import AuthTextInput from '~/components/TextInputs/AuthTextInput';
 import Header from '~/components/Headers/Header';
 
 const TEXT_INPUT_WIDTH = 290;
@@ -18,18 +18,18 @@ export default class Signup extends React.Component {
       <SafeAreaView style={styles.signUpContainer}>
         <Header goBack={() => this.props.navigation.goBack()} />
         <Text style={styles.signUpTitle}>Sign Up</Text>
-        <MyTextInput contentWidth={TEXT_INPUT_WIDTH} text="Name" type="name" />
-        <MyTextInput
+        <AuthTextInput contentWidth={TEXT_INPUT_WIDTH} text="Name" type="name" />
+        <AuthTextInput
           contentWidth={TEXT_INPUT_WIDTH}
           text="Email"
           type="email"
         />
-        <MyTextInput
+        <AuthTextInput
           contentWidth={TEXT_INPUT_WIDTH}
           text="Enter Your Password"
           type="password"
         />
-        <MyTextInput
+        <AuthTextInput
           contentWidth={TEXT_INPUT_WIDTH}
           text="Confirm Your Password"
           type="confirm"

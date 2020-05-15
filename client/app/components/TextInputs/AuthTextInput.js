@@ -2,7 +2,7 @@ import React from 'react';
 import {View, Image, StyleSheet, TextInput} from 'react-native';
 import {Images} from '~/assets/images';
 
-const MyTextInput = ({text, contentWidth, type}) => {
+const AuthTextInput = ({text, contentWidth, type}) => {
   return (
     <View style={[styles.authTextInput, {width: contentWidth}]}>
       <TextInput
@@ -43,4 +43,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default MyTextInput;
+export default AuthTextInput;

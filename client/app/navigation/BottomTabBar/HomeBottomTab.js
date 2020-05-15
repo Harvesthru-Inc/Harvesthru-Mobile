@@ -36,6 +36,7 @@ const HomeBottomTab = createBottomTabNavigator(
         height: BOTTOM_TAB_HEIGHT,
         justifyContent: 'center',
         paddingVertical: 10,
+        position: 'absolute',
       },
     },
   },

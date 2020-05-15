@@ -7,7 +7,7 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import NextButton from '~/components/Buttons/NextButton';
-import MyTextInput from '~/components/TextInputs/MyTextInput';
+import AuthTextInput from '~/components/TextInputs/AuthTextInput';
 
 const TEXT_INPUT_WIDTH = 290;
 
@@ -19,7 +19,7 @@ export default class Phone extends React.Component {
         <Text style={styles.helpText}>
           Enter your phone number and we will send you 4-digit code
         </Text>
-        <MyTextInput
+        <AuthTextInput
           contentWidth={TEXT_INPUT_WIDTH}
           text="Phone Number"
           type="phone"
