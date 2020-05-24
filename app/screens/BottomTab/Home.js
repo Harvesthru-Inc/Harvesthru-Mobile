@@ -8,7 +8,7 @@ import {
   Text,
   Keyboard,
 } from 'react-native';
-import MapView from 'react-native-maps';
+import MapView, {PROVIDER_GOOGLE} from 'react-native-maps';
 import {getStatusBarHeight} from 'react-native-status-bar-height';
 import HomeTextInput from '~/components/TextInputs/HomeTextInput';
 
@@ -128,7 +128,7 @@ export default class Home extends React.Component {
 
     return (
       <View style={styles.container}>
-        <MapView style={styles.map} />
+        <MapView style={styles.map} provider={PROVIDER_GOOGLE} />
         <Animated.View
           {...handles}
           style={[styles.scrollMenu, {height: this.currentHeight}]}>
