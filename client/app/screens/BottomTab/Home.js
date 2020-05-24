@@ -15,8 +15,8 @@ import HomeTextInput from '~/components/TextInputs/HomeTextInput';
 // Define scroll levels
 const MAX_SCROLL_HEIGHT =
   Dimensions.get('window').height - getStatusBarHeight();
-const DEFAULT_SCROLL_HEIGHT = 220;
-const MIN_SCROLL_HEIGHT = 55;
+const DEFAULT_SCROLL_HEIGHT = 440;
+const MIN_SCROLL_HEIGHT = 150;
 const SMOOTH_FACTOR = 1.0;
 
 export default class Home extends React.Component {

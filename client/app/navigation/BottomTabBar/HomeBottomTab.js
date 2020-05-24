@@ -31,7 +31,7 @@ const HomeBottomTab = createBottomTabNavigator(
     }),
     tabBarOptions: {
       activeTintColor: '#9ACD00',
-      inactiveTintColor: '#979797',
+      inactiveTintColor: 'black',
       style: {
         height: BOTTOM_TAB_HEIGHT,
         justifyContent: 'center',
