@@ -5,6 +5,7 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* HarvesthruTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* HarvesthruTests.m */; };
 		0CD83944F6D02A19A10FBB4A /* libPods-Harvesthru-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA202A478D5173DF9BE60E4 /* libPods-Harvesthru-tvOS.a */; };
@@ -12,26 +13,26 @@
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		27DEFE2AEA8B4A27B7AB677F /* Nunito-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 67719A7B072D4C8DBAD07D4C /* Nunito-Light.ttf */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* HarvesthruTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* HarvesthruTests.m */; };
 		39C7C13D79D04C83960D9175 /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5021E68106BA4C73AF137AD7 /* Quicksand-Regular.ttf */; };
 		3A77CC195B194FABB56E2AD3 /* Quicksand-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 00B2E90FBA3F484AA07A58EB /* Quicksand-Bold.ttf */; };
+		3FE9593B09DC43D08F0C06E6 /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F2AF882F7F04607ACB73825 /* Nunito-Regular.ttf */; };
+		510BF4B146864EA2A57EFC9D /* Nunito-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76D59790EB214DF49316149E /* Nunito-ExtraLight.ttf */; };
+		5CBAD7B1522442D58F2A132A /* Nunito-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD03A50F37D7421DA87122E7 /* Nunito-Black.ttf */; };
 		5FCC6A55A2105E67774436B4 /* libPods-HarvesthruTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51405D61A9D37D1C8D4B7960 /* libPods-HarvesthruTests.a */; };
 		60950D0BE9BF471FB3ECE1C3 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45C58469A06A4AD085C70FCD /* Montserrat-Regular.ttf */; };
+		650FF8D1040048C0975A7C6E /* Nunito-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A69AABCD65E54FFB9D58F248 /* Nunito-ExtraBold.ttf */; };
 		7232D3CD2FC36C268A19C96A /* libPods-Harvesthru-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94ED45AF72AE0BEF5505B062 /* libPods-Harvesthru-tvOSTests.a */; };
 		7311D1CC49644AF99DE2D474 /* Quicksand-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 900712A4CBC54FCAA93FC872 /* Quicksand-Light.ttf */; };
 		7318F46DBE6645A69B359316 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 31B375FB810F4F609E7BF349 /* Montserrat-Bold.ttf */; };
-		AAEBE9087907D5DD468CA2B9 /* libPods-Harvesthru.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FABA32AD9620B73B8C4C5C4 /* libPods-Harvesthru.a */; };
-		5CBAD7B1522442D58F2A132A /* Nunito-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD03A50F37D7421DA87122E7 /* Nunito-Black.ttf */; };
 		A181467CF9AD428D8DEFD9BE /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A004B63BFB94C3786455FA5 /* Nunito-Bold.ttf */; };
-		650FF8D1040048C0975A7C6E /* Nunito-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A69AABCD65E54FFB9D58F248 /* Nunito-ExtraBold.ttf */; };
-		510BF4B146864EA2A57EFC9D /* Nunito-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76D59790EB214DF49316149E /* Nunito-ExtraLight.ttf */; };
-		27DEFE2AEA8B4A27B7AB677F /* Nunito-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 67719A7B072D4C8DBAD07D4C /* Nunito-Light.ttf */; };
-		FB3FE25FCA1E4973A358405E /* Nunito-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4629E9EF473B45F18F1C459D /* Nunito-Medium.ttf */; };
-		3FE9593B09DC43D08F0C06E6 /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F2AF882F7F04607ACB73825 /* Nunito-Regular.ttf */; };
+		AAEBE9087907D5DD468CA2B9 /* libPods-Harvesthru.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FABA32AD9620B73B8C4C5C4 /* libPods-Harvesthru.a */; };
 		F324A7563CD642CB87E4D7A6 /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C14C603CD3C4C6F97DE4FCF /* Nunito-SemiBold.ttf */; };
+		FB3FE25FCA1E4973A358405E /* Nunito-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4629E9EF473B45F18F1C459D /* Nunito-Medium.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,22 +70,30 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Harvesthru/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Harvesthru/main.m; sourceTree = "<group>"; };
 		196F2BCDCF8B47C6A8B6D894 /* Quicksand-Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Quicksand-Light.otf"; path = "../assets/fonts/Quicksand-Light.otf"; sourceTree = "<group>"; };
+		2C14C603CD3C4C6F97DE4FCF /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-SemiBold.ttf"; path = "../assets/fonts/Nunito-SemiBold.ttf"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* Harvesthru-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Harvesthru-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* Harvesthru-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Harvesthru-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		31B375FB810F4F609E7BF349 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Bold.ttf"; path = "../assets/fonts/Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		45A1FDCFA402F4552E806A00 /* Pods-Harvesthru-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Harvesthru-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-Harvesthru-tvOS/Pods-Harvesthru-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		45C58469A06A4AD085C70FCD /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Regular.ttf"; path = "../assets/fonts/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		4629E9EF473B45F18F1C459D /* Nunito-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-Medium.ttf"; path = "../assets/fonts/Nunito-Medium.ttf"; sourceTree = "<group>"; };
 		5021E68106BA4C73AF137AD7 /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Quicksand-Regular.ttf"; path = "../assets/fonts/Quicksand-Regular.ttf"; sourceTree = "<group>"; };
 		51405D61A9D37D1C8D4B7960 /* libPods-HarvesthruTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HarvesthruTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5347856CA21DAC5205534129 /* Pods-Harvesthru-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Harvesthru-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Harvesthru-tvOSTests/Pods-Harvesthru-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		67719A7B072D4C8DBAD07D4C /* Nunito-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-Light.ttf"; path = "../assets/fonts/Nunito-Light.ttf"; sourceTree = "<group>"; };
 		6D563B44F9704DBBACD6019B /* Quicksand-Italic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Quicksand-Italic.otf"; path = "../assets/fonts/Quicksand-Italic.otf"; sourceTree = "<group>"; };
 		6FABA32AD9620B73B8C4C5C4 /* libPods-Harvesthru.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Harvesthru.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		76D59790EB214DF49316149E /* Nunito-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-ExtraLight.ttf"; path = "../assets/fonts/Nunito-ExtraLight.ttf"; sourceTree = "<group>"; };
+		7A004B63BFB94C3786455FA5 /* Nunito-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-Bold.ttf"; path = "../assets/fonts/Nunito-Bold.ttf"; sourceTree = "<group>"; };
 		84C0B12CEBD94A92A740E04F /* Quicksand_Dash.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Quicksand_Dash.otf; path = ../assets/fonts/Quicksand_Dash.otf; sourceTree = "<group>"; };
 		8AA3D66F7915D627B094D8C6 /* Pods-HarvesthruTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HarvesthruTests.debug.xcconfig"; path = "Target Support Files/Pods-HarvesthruTests/Pods-HarvesthruTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8F2AF882F7F04607ACB73825 /* Nunito-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-Regular.ttf"; path = "../assets/fonts/Nunito-Regular.ttf"; sourceTree = "<group>"; };
 		900712A4CBC54FCAA93FC872 /* Quicksand-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Quicksand-Light.ttf"; path = "../assets/fonts/Quicksand-Light.ttf"; sourceTree = "<group>"; };
 		94ED45AF72AE0BEF5505B062 /* libPods-Harvesthru-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Harvesthru-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A06792914A7A43EE93876410 /* Quicksand-LightItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Quicksand-LightItalic.otf"; path = "../assets/fonts/Quicksand-LightItalic.otf"; sourceTree = "<group>"; };
 		A45A55168D33482F83F7497D /* Quicksand-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Quicksand-Bold.otf"; path = "../assets/fonts/Quicksand-Bold.otf"; sourceTree = "<group>"; };
+		A69AABCD65E54FFB9D58F248 /* Nunito-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-ExtraBold.ttf"; path = "../assets/fonts/Nunito-ExtraBold.ttf"; sourceTree = "<group>"; };
+		AD03A50F37D7421DA87122E7 /* Nunito-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-Black.ttf"; path = "../assets/fonts/Nunito-Black.ttf"; sourceTree = "<group>"; };
 		B6898A712232805989A2646F /* Pods-Harvesthru.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Harvesthru.release.xcconfig"; path = "Target Support Files/Pods-Harvesthru/Pods-Harvesthru.release.xcconfig"; sourceTree = "<group>"; };
 		BCBD91AB6B014A64B594AFEB /* Quicksand-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Quicksand-Regular.otf"; path = "../assets/fonts/Quicksand-Regular.otf"; sourceTree = "<group>"; };
 		ECECB891C4119BA48E96AAA1 /* Pods-Harvesthru-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Harvesthru-tvOS.release.xcconfig"; path = "Target Support Files/Pods-Harvesthru-tvOS/Pods-Harvesthru-tvOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -92,14 +101,6 @@
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		EF759F6615B94FDB9CC81482 /* Montserrat.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Montserrat.ttf; path = ../assets/fonts/Montserrat.ttf; sourceTree = "<group>"; };
 		FFA202A478D5173DF9BE60E4 /* libPods-Harvesthru-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Harvesthru-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD03A50F37D7421DA87122E7 /* Nunito-Black.ttf */ = {isa = PBXFileReference; name = "Nunito-Black.ttf"; path = "../assets/fonts/Nunito-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		7A004B63BFB94C3786455FA5 /* Nunito-Bold.ttf */ = {isa = PBXFileReference; name = "Nunito-Bold.ttf"; path = "../assets/fonts/Nunito-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		A69AABCD65E54FFB9D58F248 /* Nunito-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Nunito-ExtraBold.ttf"; path = "../assets/fonts/Nunito-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		76D59790EB214DF49316149E /* Nunito-ExtraLight.ttf */ = {isa = PBXFileReference; name = "Nunito-ExtraLight.ttf"; path = "../assets/fonts/Nunito-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		67719A7B072D4C8DBAD07D4C /* Nunito-Light.ttf */ = {isa = PBXFileReference; name = "Nunito-Light.ttf"; path = "../assets/fonts/Nunito-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		4629E9EF473B45F18F1C459D /* Nunito-Medium.ttf */ = {isa = PBXFileReference; name = "Nunito-Medium.ttf"; path = "../assets/fonts/Nunito-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		8F2AF882F7F04607ACB73825 /* Nunito-Regular.ttf */ = {isa = PBXFileReference; name = "Nunito-Regular.ttf"; path = "../assets/fonts/Nunito-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		2C14C603CD3C4C6F97DE4FCF /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; name = "Nunito-SemiBold.ttf"; path = "../assets/fonts/Nunito-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -352,20 +353,20 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = MC92QLL494;
+						DevelopmentTeam = R4F8AXQ8Z2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = MC92QLL494;
+						DevelopmentTeam = R4F8AXQ8Z2;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = MC92QLL494;
+						DevelopmentTeam = R4F8AXQ8Z2;
 						ProvisioningStyle = Automatic;
 					};
 					2D02E48F1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = MC92QLL494;
+						DevelopmentTeam = R4F8AXQ8Z2;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2D02E47A1E0B4A5D006451C7;
 					};
@@ -682,7 +683,7 @@
 			baseConfigurationReference = 8AA3D66F7915D627B094D8C6 /* Pods-HarvesthruTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = MC92QLL494;
+				DEVELOPMENT_TEAM = R4F8AXQ8Z2;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -707,7 +708,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = MC92QLL494;
+				DEVELOPMENT_TEAM = R4F8AXQ8Z2;
 				INFOPLIST_FILE = HarvesthruTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -729,7 +730,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = MC92QLL494;
+				DEVELOPMENT_TEAM = R4F8AXQ8Z2;
 				INFOPLIST_FILE = Harvesthru/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -749,7 +750,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = MC92QLL494;
+				DEVELOPMENT_TEAM = R4F8AXQ8Z2;
 				INFOPLIST_FILE = Harvesthru/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -774,7 +775,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = MC92QLL494;
+				DEVELOPMENT_TEAM = R4F8AXQ8Z2;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Harvesthru-tvOS/Info.plist";
@@ -804,7 +805,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = MC92QLL494;
+				DEVELOPMENT_TEAM = R4F8AXQ8Z2;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Harvesthru-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -831,7 +832,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = MC92QLL494;
+				DEVELOPMENT_TEAM = R4F8AXQ8Z2;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Harvesthru-tvOSTests/Info.plist";
@@ -860,7 +861,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = MC92QLL494;
+				DEVELOPMENT_TEAM = R4F8AXQ8Z2;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Harvesthru-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
