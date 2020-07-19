@@ -8,10 +8,18 @@ import {
 } from 'react-native';
 import NextButton from '~/components/Buttons/NextButton';
 import AuthTextInput from '~/components/TextInputs/AuthTextInput';
+import RedirectLogin from '~/components/Footers/RedirectLogin';
 
 const TEXT_INPUT_WIDTH = 290;
 
 export default class Phone extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      phone: '',
+    };
+  }
+
   render() {
     return (
       <SafeAreaView style={styles.container}>
@@ -23,6 +31,8 @@ export default class Phone extends React.Component {
           contentWidth={TEXT_INPUT_WIDTH}
           text="Phone Number"
           type="phone"
+          value={this.state.phone}
+          onChange={text => this.setState({phone: text})}
         />
         <NextButton
           text={'NEXT'}
@@ -32,13 +42,6 @@ export default class Phone extends React.Component {
         <Text style={[styles.helpText, {textAlign: 'center', marginTop: 30}]}>
           By entering your phone number, you agree to our Terms and Conditions
         </Text>
-        <View style={styles.redirectLogin}>
-          <Text style={styles.loginText}>Already have an account? </Text>
-          <TouchableOpacity
-            onPress={() => this.props.navigation.navigate('Login')}>
-            <Text style={styles.loginTextBold}>Log In!</Text>
-          </TouchableOpacity>
-        </View>
       </SafeAreaView>
     );
   }

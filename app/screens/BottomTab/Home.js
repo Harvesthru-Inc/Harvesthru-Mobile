@@ -80,6 +80,7 @@ export default class Home extends React.Component {
       toValue: height,
       overshootClamping: true,
       speed: 8,
+      useNativeDriver: false,
     }).start();
   };
 

@@ -9,6 +9,7 @@ import {
 } from 'react-native';
 import Header from '~/components/Headers/Header';
 import NextButton from '~/components/Buttons/NextButton';
+import RedirectLogin from '~/components/Footers/RedirectLogin';
 
 const TEXT_INPUT_WIDTH = 290;
 
@@ -38,15 +39,8 @@ export default class VerifyPhone extends React.Component {
         <NextButton
           text={'TO HOME'}
           onPress={() => this.props.navigation.navigate('Main')}
-          extraStyles={{marginTop: 40}}
+          extraStyles={styles.nextButtonStyle}
         />
-        <View style={styles.redirectLogin}>
-          <Text style={styles.loginText}>Already have an account? </Text>
-          <TouchableOpacity
-            onPress={() => this.props.navigation.navigate('Login')}>
-            <Text style={styles.loginTextBold}>Log In!</Text>
-          </TouchableOpacity>
-        </View>
       </SafeAreaView>
     );
   }
@@ -127,5 +121,9 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     textAlignVertical: 'center',
     fontSize: 30,
+  },
+
+  nextButtonStyle: {
+    marginTop: 40,
   },
 });

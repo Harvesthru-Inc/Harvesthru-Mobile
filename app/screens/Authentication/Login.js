@@ -10,25 +10,38 @@ import {
 import {Images} from '~/assets/images';
 import NextButton from '~/components/Buttons/NextButton';
 import AuthTextInput from '~/components/TextInputs/AuthTextInput';
+import RedirectLogin from '~/components/Footers/RedirectLogin';
 
 // Set width for login text input
 const TEXT_INPUT_WIDTH = 290;
 
 export default class Login extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      email: '',
+      password: '',
+    };
+  }
+
   render() {
     return (
       <SafeAreaView style={styles.loginContainer}>
-        <Image source={Images.wheatIcon}></Image>
+        <Image source={Images.wheatIcon} />
         <Text style={styles.loginTitle}>Harvesthru</Text>
         <AuthTextInput
           contentWidth={TEXT_INPUT_WIDTH}
           text="Email"
           type="email"
+          onChange={text => this.setState({email: text})}
+          value={this.state.email}
         />
         <AuthTextInput
           contentWidth={TEXT_INPUT_WIDTH}
           text="Password"
           type="password"
+          onChange={text => this.setState({password: text})}
+          value={this.state.password}
         />
         <TouchableOpacity
           onPress={() => this.props.navigation.navigate('ForgotPass')}>
@@ -40,21 +53,15 @@ export default class Login extends React.Component {
           onPress={() => this.props.navigation.navigate('Main')}
         />
         <View style={styles.loginWith}>
-          <View style={styles.loginWithHr}></View>
+          <View style={styles.loginWithHr} />
           <Text style={styles.loginWithText}>Or Log In With</Text>
-          <View style={styles.loginWithHr}></View>
+          <View style={styles.loginWithHr} />
         </View>
         <View style={styles.authButtons}>
           <Image source={Images.fbIcon} />
           <Image source={Images.googleIcon} />
         </View>
-        <View style={styles.redirectSignup}>
-          <Text style={styles.signUpText}>Don't have an account? </Text>
-          <TouchableOpacity
-            onPress={() => this.props.navigation.navigate('Signup')}>
-            <Text style={styles.signUpTextBold}>Sign Up!</Text>
-          </TouchableOpacity>
-        </View>
+        <RedirectLogin navigation={this.props.navigation} login={true} />
       </SafeAreaView>
     );
   }

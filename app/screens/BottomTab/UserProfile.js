@@ -93,14 +93,13 @@ export default class UserProfile extends React.Component {
 
     return (
       <SafeAreaView style={styles.container}>
-        <Header
-          centerIcon={true}
-        />
+        <Header centerIcon={true} />
         <View style={styles.topSection}>
           <View style={styles.userDetails}>
             <Image
               style={styles.userProfileImage}
-              source={Images.profilePlaceholder}></Image>
+              source={Images.profilePlaceholder}
+            />
             <View style={styles.userInfo}>
               <Text style={styles.userRealName}>Mister Sun</Text>
               <Text style={styles.userHandle}>@mistersun1</Text>
@@ -171,7 +170,7 @@ export default class UserProfile extends React.Component {
             </View>
           </TouchableWithoutFeedback>
         </View>
-        <TextInput style={styles.searchBar}></TextInput>
+        <TextInput style={styles.searchBar} />
         <View style={styles.flatListContainer}>
           <FlatList
             data={data}

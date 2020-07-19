@@ -2,15 +2,19 @@ import React from 'react';
 import {View, Image, StyleSheet, TextInput} from 'react-native';
 import {Images} from '~/assets/images';
 
-const AuthTextInput = ({text, contentWidth, type}) => {
+const AuthTextInput = ({text, contentWidth, type, value, onChange}) => {
   return (
     <View style={[styles.authTextInput, {width: contentWidth}]}>
       <TextInput
         secureTextEntry={type === 'password'}
-        style={[styles.passInput, {width: type === 'password' ? contentWidth - 14 : contentWidth}]}
+        onChangeText={onChange}
+        style={[
+          styles.passInput,
+          {width: type === 'password' ? contentWidth - 14 : contentWidth},
+        ]}
         placeholder={text}
       />
-      {type === 'password' && <Image source={Images.hidePasswordIcon}></Image>}
+      {type === 'password' && <Image source={Images.hidePasswordIcon} />}
     </View>
   );
 };
