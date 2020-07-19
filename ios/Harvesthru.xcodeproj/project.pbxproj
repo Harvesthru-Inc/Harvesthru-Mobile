@@ -14,36 +14,23 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		1A0B0B6E0D0740A29F3837FC /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AE7B6C1C6585453E8E12E7E8 /* Nunito-Regular.ttf */; };
-		27DEFE2AEA8B4A27B7AB677F /* Nunito-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 67719A7B072D4C8DBAD07D4C /* Nunito-Light.ttf */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* HarvesthruTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* HarvesthruTests.m */; };
 		38A179A850E24D38A6970B43 /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0EAA3144A38442EB85F07AE3 /* Quicksand-Regular.ttf */; };
-		39C7C13D79D04C83960D9175 /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5021E68106BA4C73AF137AD7 /* Quicksand-Regular.ttf */; };
-		3A77CC195B194FABB56E2AD3 /* Quicksand-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 00B2E90FBA3F484AA07A58EB /* Quicksand-Bold.ttf */; };
 		3EC96EB2BA37479DB8F843AA /* Nunito-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 08A1E3A638824966B196FCA8 /* Nunito-Medium.ttf */; };
-		3FE9593B09DC43D08F0C06E6 /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F2AF882F7F04607ACB73825 /* Nunito-Regular.ttf */; };
-		510BF4B146864EA2A57EFC9D /* Nunito-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76D59790EB214DF49316149E /* Nunito-ExtraLight.ttf */; };
 		54A6EF9780824059B7103BB7 /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32B4BB6004114BA6AF1BB6F4 /* Nunito-SemiBold.ttf */; };
-		5CBAD7B1522442D58F2A132A /* Nunito-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD03A50F37D7421DA87122E7 /* Nunito-Black.ttf */; };
 		5FCC6A55A2105E67774436B4 /* libPods-HarvesthruTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51405D61A9D37D1C8D4B7960 /* libPods-HarvesthruTests.a */; };
-		60950D0BE9BF471FB3ECE1C3 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45C58469A06A4AD085C70FCD /* Montserrat-Regular.ttf */; };
-		650FF8D1040048C0975A7C6E /* Nunito-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A69AABCD65E54FFB9D58F248 /* Nunito-ExtraBold.ttf */; };
 		6FAA9F439131419AB4133CCD /* Nunito-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 90E0AA47631B4032B1449F37 /* Nunito-ExtraBold.ttf */; };
 		7232D3CD2FC36C268A19C96A /* libPods-Harvesthru-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94ED45AF72AE0BEF5505B062 /* libPods-Harvesthru-tvOSTests.a */; };
-		7311D1CC49644AF99DE2D474 /* Quicksand-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 900712A4CBC54FCAA93FC872 /* Quicksand-Light.ttf */; };
-		7318F46DBE6645A69B359316 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 31B375FB810F4F609E7BF349 /* Montserrat-Bold.ttf */; };
 		768243093A464F66BE0519DA /* Nunito-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 821880C4CDD84628A4215E42 /* Nunito-Light.ttf */; };
 		78DE6DC8F25D4235A9C4BAB0 /* Quicksand-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 844F18A96D7A40FD8E4DE8CA /* Quicksand-Bold.ttf */; };
 		8608889FE34940929F2379B2 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5097AE9CD5AE447D89C73C3A /* Montserrat-Bold.ttf */; };
-		A181467CF9AD428D8DEFD9BE /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A004B63BFB94C3786455FA5 /* Nunito-Bold.ttf */; };
 		A90AB72A1D8044B286E7A716 /* Quicksand-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC82A94BB3144FAA8C73DF38 /* Quicksand-Light.ttf */; };
 		AAEBE9087907D5DD468CA2B9 /* libPods-Harvesthru.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FABA32AD9620B73B8C4C5C4 /* libPods-Harvesthru.a */; };
 		C2F21E50162F4B1BB432A438 /* Nunito-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 225091F30A464C48B0DA4A45 /* Nunito-Black.ttf */; };
 		DB8B9942345B4DD79F0F688B /* Nunito-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C9101AAFE024CA48646C342 /* Nunito-ExtraLight.ttf */; };
-		F324A7563CD642CB87E4D7A6 /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C14C603CD3C4C6F97DE4FCF /* Nunito-SemiBold.ttf */; };
-		FB3FE25FCA1E4973A358405E /* Nunito-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4629E9EF473B45F18F1C459D /* Nunito-Medium.ttf */; };
 		FD8BB8F69D1E41E790C491A6 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3D59AB62B6148A4AE4C85D7 /* Montserrat-Regular.ttf */; };
 		FDAA04AD1AF7432FAC10FB97 /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 903EA417A60244AB90C3F761 /* Nunito-Bold.ttf */; };
 /* End PBXBuildFile section */
@@ -446,19 +433,6 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
-				3A77CC195B194FABB56E2AD3 /* Quicksand-Bold.ttf in Resources */,
-				7311D1CC49644AF99DE2D474 /* Quicksand-Light.ttf in Resources */,
-				39C7C13D79D04C83960D9175 /* Quicksand-Regular.ttf in Resources */,
-				7318F46DBE6645A69B359316 /* Montserrat-Bold.ttf in Resources */,
-				60950D0BE9BF471FB3ECE1C3 /* Montserrat-Regular.ttf in Resources */,
-				5CBAD7B1522442D58F2A132A /* Nunito-Black.ttf in Resources */,
-				A181467CF9AD428D8DEFD9BE /* Nunito-Bold.ttf in Resources */,
-				650FF8D1040048C0975A7C6E /* Nunito-ExtraBold.ttf in Resources */,
-				510BF4B146864EA2A57EFC9D /* Nunito-ExtraLight.ttf in Resources */,
-				27DEFE2AEA8B4A27B7AB677F /* Nunito-Light.ttf in Resources */,
-				FB3FE25FCA1E4973A358405E /* Nunito-Medium.ttf in Resources */,
-				3FE9593B09DC43D08F0C06E6 /* Nunito-Regular.ttf in Resources */,
-				F324A7563CD642CB87E4D7A6 /* Nunito-SemiBold.ttf in Resources */,
 				8608889FE34940929F2379B2 /* Montserrat-Bold.ttf in Resources */,
 				FD8BB8F69D1E41E790C491A6 /* Montserrat-Regular.ttf in Resources */,
 				C2F21E50162F4B1BB432A438 /* Nunito-Black.ttf in Resources */,
@@ -784,6 +758,7 @@
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = MC92QLL494;
 				INFOPLIST_FILE = Harvesthru/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -804,6 +779,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MC92QLL494;
 				INFOPLIST_FILE = Harvesthru/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
