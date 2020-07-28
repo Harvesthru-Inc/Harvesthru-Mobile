@@ -37,13 +37,16 @@
 			</dict>
 		</dict>
 	</dict>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string/>
-	<key>NSCameraUsageDescription</key>
-	<string>Your message to user when the camera is accessed for the first time</string>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>Your message to user when the microphone is accessed for the first time</string>
-	<key>UIAppFonts</key>
+  <key>NSCameraUsageDescription</key>
+  <string>Allow Harvesthru to use your camera</string>
+  <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+  <string>Allow Harvesthru to use your location</string>
+  <key>NSLocationAlwaysUsageDescription</key>
+  <string>Allow Harvesthru to always use your location</string>
+  <key>NSLocationWhenInUseUsageDescription</key>
+  <string>Allow Harvesthru to use your location when the app is open</string>
+  <key>NSPhotoLibraryUsageDescription</key>
+  <string>Allow Harvesthru to access your photos</string>
 	<array>
 		<string>Quicksand-Bold.ttf</string>
 		<string>Quicksand-Light.ttf</string>

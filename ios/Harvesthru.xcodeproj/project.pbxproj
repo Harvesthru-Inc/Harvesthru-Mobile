@@ -14,6 +14,7 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		1A0B0B6E0D0740A29F3837FC /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AE7B6C1C6585453E8E12E7E8 /* Nunito-Regular.ttf */; };
+		1EDD45D424CFC892003C2E21 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EDD45D324CFC892003C2E21 /* Default-568h@2x.png */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -72,6 +73,7 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Harvesthru/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Harvesthru/main.m; sourceTree = "<group>"; };
 		196F2BCDCF8B47C6A8B6D894 /* Quicksand-Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Quicksand-Light.otf"; path = "../assets/fonts/Quicksand-Light.otf"; sourceTree = "<group>"; };
+		1EDD45D324CFC892003C2E21 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		225091F30A464C48B0DA4A45 /* Nunito-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-Black.ttf"; path = "../app/assets/fonts/Nunito-Black.ttf"; sourceTree = "<group>"; };
 		2C14C603CD3C4C6F97DE4FCF /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-SemiBold.ttf"; path = "../assets/fonts/Nunito-SemiBold.ttf"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* Harvesthru-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Harvesthru-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -206,6 +208,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				1EDD45D324CFC892003C2E21 /* Default-568h@2x.png */,
 				13B07FAE1A68108700A75B9A /* Harvesthru */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* HarvesthruTests */,
@@ -444,6 +447,7 @@
 				1A0B0B6E0D0740A29F3837FC /* Nunito-Regular.ttf in Resources */,
 				54A6EF9780824059B7103BB7 /* Nunito-SemiBold.ttf in Resources */,
 				78DE6DC8F25D4235A9C4BAB0 /* Quicksand-Bold.ttf in Resources */,
+				1EDD45D424CFC892003C2E21 /* Default-568h@2x.png in Resources */,
 				A90AB72A1D8044B286E7A716 /* Quicksand-Light.ttf in Resources */,
 				38A179A850E24D38A6970B43 /* Quicksand-Regular.ttf in Resources */,
 			);
