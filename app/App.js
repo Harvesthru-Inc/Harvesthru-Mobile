@@ -30,7 +30,7 @@ export default class App extends React.Component {
 
   render() {
     // If no internet connection, return offline screen
-    if (this.state.wifiEnabled) {
+    if (!this.state.wifiEnabled) {
       return <OfflineScreen />;
     }
 

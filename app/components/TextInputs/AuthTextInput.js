@@ -21,7 +21,7 @@ const AuthTextInput = ({text, contentWidth, type, value, onChange}) => {
 
 const styles = StyleSheet.create({
   authTextInput: {
-    fontFamily: 'Quicksand-Bold',
+    fontFamily: 'Nunito-Bold',
     fontStyle: 'normal',
     flexDirection: 'row',
     fontSize: 14,
@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
   },
 
   passInput: {
-    fontFamily: 'Quicksand-Bold',
+    fontFamily: 'Nunito-Bold',
     fontStyle: 'normal',
     fontSize: 14,
     lineHeight: 17,

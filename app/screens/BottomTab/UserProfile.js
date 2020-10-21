@@ -215,7 +215,7 @@ const styles = StyleSheet.create({
   },
 
   userRealName: {
-    fontFamily: 'Quicksand-Bold',
+    fontFamily: 'Nunito-Bold',
     fontSize: 24,
     lineHeight: 30,
     color: '#4A4A4A',

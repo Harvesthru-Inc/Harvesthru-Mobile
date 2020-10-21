@@ -11,9 +11,13 @@ import {Images} from '~/assets/images';
 import NextButton from '~/components/Buttons/NextButton';
 import AuthTextInput from '~/components/TextInputs/AuthTextInput';
 import RedirectLogin from '~/components/Footers/RedirectLogin';
+import Loading from '~/screens/Loading';
+import {LoginFn} from '~/api/login';
+import showToast from '~/utils/toastMessage';
 
 // Set width for login text input
 const TEXT_INPUT_WIDTH = 290;
+const ERROR_MSG_TYPE = 'danger';
 
 export default class Login extends React.Component {
   constructor(props) {
@@ -21,17 +25,57 @@ export default class Login extends React.Component {
     this.state = {
       email: '',
       password: '',
+      loading: false,
     };
   }
 
+  // login function
+  login = async () => {
+    const {email, password} = this.state;
+    const {navigation} = this.props;
+
+    // Check that all fields are non-empty
+    let emptyMsg = '';
+
+    // Check first name
+    if (!password) {
+      emptyMsg = 'Please enter a password!';
+    }
+
+    if (!email) {
+      emptyMsg = 'Please enter an email!';
+    }
+
+    // If anything empty, show error
+    if (emptyMsg) {
+      return showToast(emptyMsg, ERROR_MSG_TYPE, ERROR_MSG_TYPE);
+    }
+
+    // Set loading
+    this.setState({loading: true});
+
+    // Call login function
+    await LoginFn(email, password, navigation);
+
+    // Stop loading
+    this.setState({loading: false});
+  };
+
+  // RENDER
   render() {
+    // If loading, return loading
+    if (this.state.loading) {
+      return <Loading />;
+    }
+
+    // Otherwise return login
     return (
       <SafeAreaView style={styles.loginContainer}>
         <Image source={Images.wheatIcon} />
         <Text style={styles.loginTitle}>Harvesthru</Text>
         <AuthTextInput
           contentWidth={TEXT_INPUT_WIDTH}
-          text="Email"
+          text="Email / Phone Number"
           type="email"
           onChange={text => this.setState({email: text})}
           value={this.state.email}
@@ -50,7 +94,7 @@ export default class Login extends React.Component {
         <NextButton
           text={'LOGIN'}
           extraStyles={styles.btnStyles}
-          onPress={() => this.props.navigation.navigate('Main')}
+          onPress={this.login}
         />
         <View style={styles.loginWith}>
           <View style={styles.loginWithHr} />
@@ -76,7 +120,7 @@ const styles = StyleSheet.create({
   },
 
   loginTitle: {
-    fontFamily: 'Quicksand-Bold',
+    fontFamily: 'Nunito-Bold',
     fontStyle: 'normal',
     fontSize: 36,
     lineHeight: 45,
@@ -100,7 +144,7 @@ const styles = StyleSheet.create({
   },
 
   loginWithText: {
-    fontFamily: 'Quicksand-Bold',
+    fontFamily: 'Nunito-Bold',
     fontStyle: 'normal',
     fontSize: 14,
     lineHeight: 17,
@@ -142,7 +186,7 @@ const styles = StyleSheet.create({
   },
 
   signUpText: {
-    fontFamily: 'Quicksand-Regular',
+    fontFamily: 'Nunito-Regular',
     fontStyle: 'normal',
     fontSize: 14,
     lineHeight: 17,
@@ -150,7 +194,7 @@ const styles = StyleSheet.create({
   },
 
   signUpTextBold: {
-    fontFamily: 'Quicksand-Bold',
+    fontFamily: 'Nunito-Bold',
     fontStyle: 'normal',
     fontSize: 14,
     lineHeight: 17,

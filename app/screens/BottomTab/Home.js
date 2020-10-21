@@ -7,10 +7,16 @@ import {
   PanResponder,
   Text,
   Keyboard,
+  FlatList,
+  Image,
+  TouchableOpacity,
 } from 'react-native';
+import axios from 'axios';
 import MapView, {PROVIDER_GOOGLE} from 'react-native-maps';
 import {getStatusBarHeight} from 'react-native-status-bar-height';
 import HomeTextInput from '~/components/TextInputs/HomeTextInput';
+import Rating from '~/components/Rating';
+import Loading from '~/screens/Loading';
 
 // Define scroll levels
 const MAX_SCROLL_HEIGHT =
@@ -25,7 +31,9 @@ export default class Home extends React.Component {
 
     // Set state
     this.state = {
+      loading: true,
       homeInputText: '',
+      farms: [],
     };
 
     // Animated values to handle scroll menu height
@@ -71,7 +79,35 @@ export default class Home extends React.Component {
         this._bounceToHeight(height);
       },
     });
+
+    // fetch farms data
+    this.getFarms();
   }
+
+  // Get list of all farms
+  getFarms = () => {
+    // Get auth token
+    const authToken = this.props.navigation.getParam('authToken');
+
+    // Get fetch options
+    const options = {
+      headers: {'x-auth-token': authToken},
+    };
+
+    // Get all farms
+    axios
+      .get('/api/farm/all_data', options)
+      // Log response
+      .then(response => {
+        if (response && response.data && response.data.farms) {
+          this.setState({farms: response.data.farms, loading: false});
+        }
+      })
+      // Log error
+      .catch(error => {
+        console.log(error.response);
+      });
+  };
 
   // Make scroll menu jump to specified height
   _bounceToHeight = height => {
@@ -113,19 +149,73 @@ export default class Home extends React.Component {
     }
   };
 
+  // Render farm item
+  renderFarmItem = ({item, index}) => {
+    // Check num listings
+    const numListings = item.listings ? item.listings.length : 0;
+
+    // Get farm id
+    const farmId = item._id;
+    const authToken = this.props.navigation.getParam('authToken');
+
+    // Navigate to farm
+    const navigateToFarm = () => {
+      this.props.navigation.navigate('Farm', {farmId, authToken});
+    };
+
+    return (
+      <TouchableOpacity
+        style={[styles.farm, {width: Dimensions.get('window').width * 0.8}]}
+        onPress={navigateToFarm}>
+        <Text style={styles.farmText}>
+          {index + 1}. {item.title}
+        </Text>
+        <View style={styles.farmDetails}>
+          <Rating rating={item.rating} />
+          <Text style={styles.farmTags}>{item.tags.join(', ')}</Text>
+          <View style={styles.farmListingImages}>
+            {numListings > 0 ? (
+              item.listings.map(listing => (
+                <Image
+                  key={listing._id}
+                  style={styles.farmListingImage}
+                  source={listing.coverPhoto ? {uri: listing.coverPhoto} : {}}
+                />
+              ))
+            ) : (
+              <Text>No Images to be shown!</Text>
+            )}
+          </View>
+        </View>
+      </TouchableOpacity>
+    );
+  };
+
   render() {
     // Get handles for pan handler
     const handles = this.panResponder.panHandlers;
 
     // Home text input parameters
     const placeholder = 'Explore fresh produce near you';
+
+    // Get value of input text
     const value = this.state.homeInputText;
+
+    // Set input text
     const setText = text => this.setState({homeInputText: text});
+
+    // If pressed input, open to max height
     const onPress = () => {
-      console.log('gi');
       this._bounceToHeight(MAX_SCROLL_HEIGHT);
     };
+
+    // Submit home text input
     const onSubmit = () => console.log(this.state.homeInputText);
+
+    // If loading, return loading screen
+    if (this.state.loading) {
+      return <Loading />;
+    }
 
     return (
       <View style={styles.container}>
@@ -141,6 +231,12 @@ export default class Home extends React.Component {
             setText={setText}
             onPress={onPress}
             onSubmit={onSubmit}
+          />
+          <FlatList
+            keyExtractor={a => a._id}
+            style={styles.farmList}
+            renderItem={this.renderFarmItem}
+            data={this.state.farms}
           />
         </Animated.View>
       </View>
@@ -190,5 +286,62 @@ const styles = StyleSheet.create({
     width: '100%',
     paddingLeft: 19,
     paddingTop: 9,
+  },
+
+  farmList: {
+    flex: 1,
+    alignSelf: 'center',
+  },
+
+  farm: {
+    backgroundColor: 'white',
+    marginHorizontal: 17,
+    shadowOffset: {
+      height: 4,
+      width: 4,
+    },
+    shadowOpacity: 0.5,
+    shadowColor: '#E4E4E4',
+    shadowRadius: 8,
+    borderRadius: 10,
+    borderWidth: 0.25,
+    borderColor: '#E4E4E4',
+    padding: 11,
+  },
+
+  farmDetails: {
+    marginHorizontal: 20,
+    marginTop: 5,
+    flex: 1,
+  },
+
+  farmText: {
+    fontFamily: 'Nunito',
+    fontSize: 15,
+    lineHeight: 20,
+  },
+
+  farmTags: {
+    fontFamily: 'Nunito',
+    fontSize: 12,
+    lineHeight: 20,
+    fontWeight: '300',
+  },
+
+  farmListingImages: {
+    flex: 1,
+    marginVertical: 10,
+    flexDirection: 'row',
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+  },
+
+  farmListingImage: {
+    height: 60,
+    width: 80,
+    borderRadius: 4,
+    marginRight: 25,
+    borderColor: 'gray',
+    borderWidth: 0.25,
   },
 });

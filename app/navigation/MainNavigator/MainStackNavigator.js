@@ -4,19 +4,23 @@ import Signup from '~/screens/Authentication/Signup';
 import ForgotPass from '~/screens/Authentication/ForgotPass';
 import Phone from '~/screens/Authentication/Phone';
 import VerifyPhone from '~/screens/Authentication/VerifyPhone';
-import HomeBottomTab from '../BottomTabBar/HomeBottomTab';
+import HomeBottomTab from '~/navigation/BottomTabBar/HomeBottomTab';
+import Farm from '~/screens/Farm';
 
-export default MainStackNavigator = createStackNavigator(
+const MainStackNavigator = createStackNavigator(
   {
+    Main: HomeBottomTab,
     Login,
     Signup,
     ForgotPass,
     Phone,
     VerifyPhone,
-    Main: HomeBottomTab,
+    Farm,
   },
   {
     headerMode: 'none',
     initialRouteName: 'Login',
   },
 );
+
+export default MainStackNavigator;

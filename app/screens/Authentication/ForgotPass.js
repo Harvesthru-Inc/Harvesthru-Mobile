@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
   },
 
   genericTitle: {
-    fontFamily: 'Quicksand-Bold',
+    fontFamily: 'Nunito-Bold',
     fontStyle: 'normal',
     fontSize: 30,
     lineHeight: 45,

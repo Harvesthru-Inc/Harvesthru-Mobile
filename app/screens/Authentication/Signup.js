@@ -22,7 +22,6 @@ export default class Signup extends React.Component {
     email: '',
     password: '',
     confirmPassword: '',
-    username: '',
   };
 
   // Show flash message with message and type
@@ -37,14 +36,7 @@ export default class Signup extends React.Component {
 
   // Signup function
   signup = () => {
-    const {
-      firstName,
-      lastName,
-      username,
-      email,
-      password,
-      confirmPassword,
-    } = this.state;
+    const {firstName, lastName, email, password, confirmPassword} = this.state;
 
     // Check that all fields are non-empty
     let emptyMsg = '';
@@ -54,8 +46,6 @@ export default class Signup extends React.Component {
       emptyMsg = 'First Name cannot be blank!';
     } else if (!lastName) {
       emptyMsg = 'Last Name cannot be blank!';
-    } else if (!username) {
-      emptyMsg = 'Username cannot be blank!';
     } else if (!email) {
       emptyMsg = 'Email cannot be blank!';
     } else if (!password) {
@@ -79,15 +69,14 @@ export default class Signup extends React.Component {
       .post('/api/auth/register', {
         firstName,
         lastName,
-        username,
         email,
         password,
       })
       // Log response
       .then(response => {
         // Get user auth token
-        console.log(response);
-        this.showToast(response.message, SUCCESS_MSG_TYPE);
+        // console.log(response);
+        // this.showToast(response.message, SUCCESS_MSG_TYPE);
 
         // Navigate to phone authentication
         this.props.navigation.navigate('Phone');
@@ -120,13 +109,6 @@ export default class Signup extends React.Component {
           type="name"
           onChange={text => this.setState({lastName: text})}
           value={this.state.lastName}
-        />
-        <AuthTextInput
-          contentWidth={TEXT_INPUT_WIDTH}
-          text="Username *"
-          type="name"
-          onChange={text => this.setState({username: text})}
-          value={this.state.username}
         />
         <AuthTextInput
           contentWidth={TEXT_INPUT_WIDTH}
@@ -169,7 +151,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   signUpTitle: {
-    fontFamily: 'Quicksand-Bold',
+    fontFamily: 'Nunito-Bold',
     fontStyle: 'normal',
     fontSize: 36,
     lineHeight: 45,

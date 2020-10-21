@@ -18,4 +18,8 @@ export const Images = {
   sellIcon: require('./BottomTabIcons/sell-icon.png'),
   ordersIcon: require('./BottomTabIcons/orders-icon.png'),
   profileIcon: require('./BottomTabIcons/profile-icon.png'),
+
+  // General Icons
+  starGray: require('./GeneralIcons/star-gray.png'),
+  starYellow: require('./GeneralIcons/star-yellow.png'),
 };

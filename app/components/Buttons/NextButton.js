@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
 
   buttonText: {
     fontSize: 18,
-    fontFamily: 'Quicksand-Bold',
+    fontFamily: 'Nunito-Bold',
     fontStyle: 'normal',
     lineHeight: 22,
     textAlign: 'center',

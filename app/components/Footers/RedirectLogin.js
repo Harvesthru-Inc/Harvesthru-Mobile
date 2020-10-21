@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
   },
 
   loginText: {
-    fontFamily: 'Quicksand-Regular',
+    fontFamily: 'Nunito-Regular',
     fontStyle: 'normal',
     fontSize: 14,
     lineHeight: 17,
@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
   },
 
   loginTextBold: {
-    fontFamily: 'Quicksand-Bold',
+    fontFamily: 'Nunito-Bold',
     fontStyle: 'normal',
     fontSize: 14,
     lineHeight: 17,

@@ -8,7 +8,7 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>No Internet Connection</Text>
+        <Text style={styles.internetText}>No Internet Connection</Text>
         <NextButton
           text={'Check Connection'}
           onPress={() => openSettings()}
@@ -28,6 +28,18 @@ const styles = StyleSheet.create({
   },
 
   btnStyles: {
-    marginTop: 80,
+    marginTop: 60,
+  },
+
+  internetText: {
+    marginTop: 20,
+    fontFamily: 'Montserrat-Regular',
+    fontStyle: 'italic',
+    fontWeight: 'normal',
+    fontSize: 18,
+    lineHeight: 20,
+    color: 'black',
+    letterSpacing: 0.5,
+    textAlign: 'center',
   },
 });

@@ -37,20 +37,13 @@
 			</dict>
 		</dict>
 	</dict>
-  <key>NSCameraUsageDescription</key>
-  <string>Allow Harvesthru to use your camera</string>
-  <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-  <string>Allow Harvesthru to use your location</string>
-  <key>NSLocationAlwaysUsageDescription</key>
-  <string>Allow Harvesthru to always use your location</string>
-  <key>NSLocationWhenInUseUsageDescription</key>
-  <string>Allow Harvesthru to use your location when the app is open</string>
-  <key>NSPhotoLibraryUsageDescription</key>
-  <string>Allow Harvesthru to access your photos</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string/>
+	<key>UIAppFonts</key>
 	<array>
-		<string>Quicksand-Bold.ttf</string>
-		<string>Quicksand-Light.ttf</string>
-		<string>Quicksand-Regular.ttf</string>
+		<string>Nunito-Bold.ttf</string>
+		<string>Nunito-Light.ttf</string>
+		<string>Nunito-Regular.ttf</string>
 		<string>Montserrat-Bold.ttf</string>
 		<string>Montserrat-Regular.ttf</string>
 		<string>Nunito-Black.ttf</string>
